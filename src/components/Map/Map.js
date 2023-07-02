@@ -1,5 +1,6 @@
 import { MapContainer, Marker, TileLayer } from 'react-leaflet'
 import MarkerIcon from './MarkerIcon'
+import Popup from './Popup'
 
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
@@ -18,7 +19,9 @@ const Map = ({ showMarkers }) => (
     <TileLayer url={map.url} />
     {
       showMarkers && locations.map((location, i) => (
-        <Marker key={i} position={location} icon={MarkerIcon} />
+        <Marker key={i} position={location} icon={MarkerIcon}>
+          <Popup />
+        </Marker>
       ))
     }
   </MapContainer>
