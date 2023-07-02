@@ -1,9 +1,10 @@
 import Layout from './components/Layout'
+import Header from './components/Header'
 
 function App() {
   return (
     <Layout
-      header={<h1>Header</h1>}
+      header={<Header />}
       footer={<h1>Footer</h1>}
     >
       <h1>Body</h1>
