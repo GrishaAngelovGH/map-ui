@@ -1,10 +1,13 @@
+import Layout from './components/Layout'
+
 function App() {
   return (
-    <div className='row g-0'>
-      <div className='col-md-12'>
-        App
-      </div>
-    </div>
+    <Layout
+      header={<h1>Header</h1>}
+      footer={<h1>Footer</h1>}
+    >
+      <h1>Body</h1>
+    </Layout>
   )
 }
 

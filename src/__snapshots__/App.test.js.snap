@@ -11,7 +11,39 @@ Object {
         <div
           class="col-md-12"
         >
-          App
+          <div
+            class="row g-0"
+          >
+            <div
+              class="col-md-12"
+            >
+              <h1>
+                Header
+              </h1>
+            </div>
+          </div>
+          <div
+            class="row g-0"
+          >
+            <div
+              class="col-md-12"
+            >
+              <h1>
+                Body
+              </h1>
+            </div>
+          </div>
+          <div
+            class="row g-0"
+          >
+            <div
+              class="col-md-12"
+            >
+              <h1>
+                Footer
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -23,7 +55,39 @@ Object {
       <div
         class="col-md-12"
       >
-        App
+        <div
+          class="row g-0"
+        >
+          <div
+            class="col-md-12"
+          >
+            <h1>
+              Header
+            </h1>
+          </div>
+        </div>
+        <div
+          class="row g-0"
+        >
+          <div
+            class="col-md-12"
+          >
+            <h1>
+              Body
+            </h1>
+          </div>
+        </div>
+        <div
+          class="row g-0"
+        >
+          <div
+            class="col-md-12"
+          >
+            <h1>
+              Footer
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
   </div>,
