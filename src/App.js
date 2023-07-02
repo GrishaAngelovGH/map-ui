@@ -1,5 +1,6 @@
 import Layout from './components/Layout'
 import Header from './components/Header'
+import Map from './components/Map'
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       header={<Header />}
       footer={<h1>Footer</h1>}
     >
-      <h1>Body</h1>
+      <Map />
     </Layout>
   )
 }
