@@ -1,9 +1,9 @@
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 
-const ButtonGroupWrapper = ({ onShowMarkersClick }) => (
+const ButtonGroupWrapper = ({ onShowMarkers }) => (
   <ButtonGroup>
-    <Button variant='success' onClick={onShowMarkersClick}>Show Markers</Button>
+    <Button variant='success' onClick={onShowMarkers}>Show Markers</Button>
   </ButtonGroup>
 )
 
