@@ -21,10 +21,16 @@ Object {
             role="group"
           >
             <button
-              class="btn btn-success"
+              class="text-white btn btn-outline-success"
               type="button"
             >
               Show Markers
+            </button>
+            <button
+              class="text-white btn btn-outline-success"
+              type="button"
+            >
+              Show Route
             </button>
           </div>
         </div>
@@ -48,10 +54,16 @@ Object {
           role="group"
         >
           <button
-            class="btn btn-success"
+            class="text-white btn btn-outline-success"
             type="button"
           >
             Show Markers
+          </button>
+          <button
+            class="text-white btn btn-outline-success"
+            type="button"
+          >
+            Show Route
           </button>
         </div>
       </div>
