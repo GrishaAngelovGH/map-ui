@@ -3,8 +3,237 @@
 exports[`should render TrafficReport component 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": <body
+    class="modal-open"
+    data-rr-ui-modal-open=""
+    style="padding-right: 1024px;"
+  >
     <div />
+    <div
+      class="fade modal-backdrop show"
+    />
+    <div
+      aria-modal="true"
+      class="fade modal show"
+      role="dialog"
+      style="display: block; padding-right: 0px;"
+      tabindex="-1"
+    >
+      <div
+        class="modal-dialog"
+      >
+        <div
+          class="modal-content"
+        >
+          <div
+            class="modal-header"
+          >
+            <div
+              class="modal-title h4"
+            >
+              <i
+                class="bi bi-geo-alt-fill text-primary border border-3 border-primary rounded"
+              />
+              <span
+                class="mx-2"
+              >
+                91 Knightsbridge, London
+              </span>
+            </div>
+            <button
+              aria-label="Close"
+              class="btn-close"
+              type="button"
+            />
+          </div>
+          <div
+            class="modal-body"
+          >
+            <p
+              class="m-0 text-center"
+            >
+              91 Knightsbridge, London SW1X 8ET
+            </p>
+            <p
+              class="m-0 text-secondary text-center"
+            >
+              Fastest route now due to traffic conditions
+            </p>
+            <div
+              class="row mt-3 justify-content-center"
+            >
+              <div
+                class="col-md-10 border rounded shadow"
+              >
+                <div
+                  class="row small"
+                >
+                  <div
+                    class="col-md-4 p-3"
+                  >
+                    <div
+                      class="alert alert-warning m-0 h-100 d-flex flex-column justify-content-center align-items-center fw-bold"
+                    >
+                      <p
+                        class="m-0"
+                      >
+                        9 min
+                      </p>
+                      <p
+                        class="m-0"
+                      >
+                        (1.9 km)
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-8 p-1"
+                  >
+                    <p
+                      class="m-0 text-success text-center fw-bold"
+                    >
+                      Via A4 and A308
+                    </p>
+                    <p
+                      class="alert alert-warning text-center fw-bold m-0 p-1"
+                    >
+                      Low Traffic
+                    </p>
+                    <p
+                      class="m-0 text-secondary d-flex align-items-center"
+                    >
+                      <i
+                        class="bi bi-sign-turn-slight-right-fill text-primary me-2"
+                      />
+                      Next Direction
+                    </p>
+                    <p
+                      class="m-0"
+                    >
+                      Head west on Knightsbridge
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row mt-3 justify-content-center"
+            >
+              <div
+                class="col-md-10 border rounded shadow"
+              >
+                <div
+                  class="row small"
+                >
+                  <div
+                    class="col-md-4 p-3"
+                  >
+                    <div
+                      class="alert alert-danger m-0 h-100 d-flex flex-column justify-content-center align-items-center fw-bold"
+                    >
+                      <p
+                        class="m-0"
+                      >
+                        9 min
+                      </p>
+                      <p
+                        class="m-0"
+                      >
+                        (1.9 km)
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-8 p-1"
+                  >
+                    <p
+                      class="m-0 text-success text-center fw-bold"
+                    >
+                      Via A4 and A308
+                    </p>
+                    <p
+                      class="alert alert-danger text-center fw-bold m-0 p-1"
+                    >
+                      High Traffic
+                    </p>
+                    <p
+                      class="m-0 text-secondary d-flex align-items-center"
+                    >
+                      <i
+                        class="bi bi-sign-turn-slight-right-fill text-primary me-2"
+                      />
+                      Next Direction
+                    </p>
+                    <p
+                      class="m-0"
+                    >
+                      Head west on Knightsbridge
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row mt-3 justify-content-center"
+            >
+              <div
+                class="col-md-10 border rounded shadow"
+              >
+                <div
+                  class="row small"
+                >
+                  <div
+                    class="col-md-4 p-3"
+                  >
+                    <div
+                      class="alert alert-success m-0 h-100 d-flex flex-column justify-content-center align-items-center fw-bold"
+                    >
+                      <p
+                        class="m-0"
+                      >
+                        9 min
+                      </p>
+                      <p
+                        class="m-0"
+                      >
+                        (1.9 km)
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-8 p-1"
+                  >
+                    <p
+                      class="m-0 text-success text-center fw-bold"
+                    >
+                      Via A4 and A308
+                    </p>
+                    <p
+                      class="alert alert-success text-center fw-bold m-0 p-1"
+                    >
+                      Normal Traffic
+                    </p>
+                    <p
+                      class="m-0 text-secondary d-flex align-items-center"
+                    >
+                      <i
+                        class="bi bi-sign-turn-slight-right-fill text-primary me-2"
+                      />
+                      Next Direction
+                    </p>
+                    <p
+                      class="m-0"
+                    >
+                      Head west on Knightsbridge
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>,
   "container": <div />,
   "debug": [Function],
