@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { MapContainer, Marker, TileLayer } from 'react-leaflet'
+import MapButton from './MapButton'
 import MarkerIcon from './MarkerIcon'
 import Popup from './Popup'
+import TrafficReport from './TrafficReport'
 
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
@@ -14,17 +17,41 @@ const map = {
   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 }
 
-const Map = ({ showMarkers }) => (
-  <MapContainer center={[map.lat, map.lng]} zoom={map.zoom} className='react-leaflet-map'>
-    <TileLayer url={map.url} />
-    {
-      showMarkers && locations.map((location, i) => (
-        <Marker key={i} position={location} icon={MarkerIcon}>
-          <Popup />
-        </Marker>
-      ))
-    }
-  </MapContainer>
-)
+const Map = ({ showMarkers }) => {
+  const [showTrafficReport, setTrafficReport] = useState(false)
+
+  const handleShowTrafficReport = () => {
+    setTrafficReport(!showTrafficReport)
+  }
+
+  return (
+    <MapContainer center={[map.lat, map.lng]} zoom={map.zoom} className='react-leaflet-map'>
+      <TileLayer url={map.url} />
+
+      <MapButton
+        icon='layout-text-sidebar-reverse'
+        title='Traffic Report'
+        onClick={handleShowTrafficReport}
+      />
+
+      {
+        showMarkers && locations.map((location, i) => (
+          <Marker key={i} position={location} icon={MarkerIcon}>
+            <Popup />
+          </Marker>
+        ))
+      }
+
+      {
+        showTrafficReport && (
+          <TrafficReport
+            show={showTrafficReport}
+            onHide={handleShowTrafficReport}
+          />
+        )
+      }
+    </MapContainer>
+  )
+}
 
 export default Map

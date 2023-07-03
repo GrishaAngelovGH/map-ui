@@ -110,6 +110,22 @@ Object {
             </div>
           </div>
         </div>
+        <div
+          class="leaflet-right"
+        >
+          <div
+            class="leaflet-control leaflet-bar"
+          >
+            <button
+              class="btn btn-light"
+              title="Traffic Report"
+            >
+              <i
+                class="bi bi-layout-text-sidebar-reverse"
+              />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </body>,
@@ -217,6 +233,22 @@ Object {
               Leaflet
             </a>
           </div>
+        </div>
+      </div>
+      <div
+        class="leaflet-right"
+      >
+        <div
+          class="leaflet-control leaflet-bar"
+        >
+          <button
+            class="btn btn-light"
+            title="Traffic Report"
+          >
+            <i
+              class="bi bi-layout-text-sidebar-reverse"
+            />
+          </button>
         </div>
       </div>
     </div>
