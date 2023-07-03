@@ -6,28 +6,32 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row g-0 bg-header justify-content-center text-center p-3"
+        class="row g-0 bg-header justify-content-between align-items-center text-center p-1"
       >
         <div
-          class="col-md-6"
+          class="col-md-2"
         >
           <h1
             class="text-white"
           >
             Map UI
           </h1>
+        </div>
+        <div
+          class="col-md-3"
+        >
           <div
             class="btn-group"
             role="group"
           >
             <button
-              class="text-white btn btn-outline-success"
+              class="btn btn-outline-success"
               type="button"
             >
               Show Markers
             </button>
             <button
-              class="text-white btn btn-outline-success"
+              class="btn btn-outline-success"
               type="button"
             >
               Show Route
@@ -39,28 +43,32 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="row g-0 bg-header justify-content-center text-center p-3"
+      class="row g-0 bg-header justify-content-between align-items-center text-center p-1"
     >
       <div
-        class="col-md-6"
+        class="col-md-2"
       >
         <h1
           class="text-white"
         >
           Map UI
         </h1>
+      </div>
+      <div
+        class="col-md-3"
+      >
         <div
           class="btn-group"
           role="group"
         >
           <button
-            class="text-white btn btn-outline-success"
+            class="btn btn-outline-success"
             type="button"
           >
             Show Markers
           </button>
           <button
-            class="text-white btn btn-outline-success"
+            class="btn btn-outline-success"
             type="button"
           >
             Show Route

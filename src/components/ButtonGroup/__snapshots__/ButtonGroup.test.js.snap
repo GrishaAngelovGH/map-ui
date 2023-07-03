@@ -10,13 +10,13 @@ Object {
         role="group"
       >
         <button
-          class="text-white btn btn-outline-success"
+          class="btn btn-outline-success"
           type="button"
         >
           Show Markers
         </button>
         <button
-          class="text-white btn btn-outline-success"
+          class="btn btn-outline-success"
           type="button"
         >
           Show Route
@@ -30,13 +30,13 @@ Object {
       role="group"
     >
       <button
-        class="text-white btn btn-outline-success"
+        class="btn btn-outline-success"
         type="button"
       >
         Show Markers
       </button>
       <button
-        class="text-white btn btn-outline-success"
+        class="btn btn-outline-success"
         type="button"
       >
         Show Route
