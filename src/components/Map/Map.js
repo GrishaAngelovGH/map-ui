@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { MapContainer, Marker, TileLayer } from 'react-leaflet'
+
 import MapButton from './MapButton'
 import MarkerIcon from './MarkerIcon'
 import Popup from './Popup'
 import TrafficReport from './TrafficReport'
+import VehicleRoute from './VehicleRoute'
 
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
@@ -17,7 +19,7 @@ const map = {
   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 }
 
-const Map = ({ showMarkers }) => {
+const Map = ({ showMarkers, showRoute }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
 
   const handleShowTrafficReport = () => {
@@ -50,6 +52,8 @@ const Map = ({ showMarkers }) => {
           />
         )
       }
+
+      {showRoute && <VehicleRoute />}
     </MapContainer>
   )
 }
