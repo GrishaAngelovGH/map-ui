@@ -13,6 +13,7 @@ Object {
         >
           <button
             class="btn btn-light"
+            title="Show List"
           >
             <i
               class="bi bi-list"
@@ -31,6 +32,7 @@ Object {
       >
         <button
           class="btn btn-light"
+          title="Show List"
         >
           <i
             class="bi bi-list"
