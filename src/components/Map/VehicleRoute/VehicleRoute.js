@@ -26,9 +26,13 @@ const VehicleRoute = () => {
     <Fragment>
       <Polyline pathOptions={limeOptions} positions={polyline} />
       {
-        polyline.map((v, i) => (
-          <Marker key={i} position={v} icon={MarkerIcon} />
-        ))
+        polyline.map((v, i) => {
+          const icon = i === 0 ? 'startFlag' : i === polyline.length - 1 ? 'finishFlag' : 'location'
+
+          return (
+            <Marker key={i} position={v} icon={MarkerIcon(icon)} />
+          )
+        })
       }
     </Fragment>
   )

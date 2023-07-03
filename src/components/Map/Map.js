@@ -38,7 +38,7 @@ const Map = ({ showMarkers, showRoute }) => {
 
       {
         showMarkers && locations.map((location, i) => (
-          <Marker key={i} position={location} icon={MarkerIcon}>
+          <Marker key={i} position={location} icon={MarkerIcon('location')}>
             <Popup />
           </Marker>
         ))
