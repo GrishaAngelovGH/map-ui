@@ -134,6 +134,22 @@ Object {
           >
             <button
               class="btn btn-light"
+              title="Play Route"
+            >
+              <i
+                class="bi bi-play-circle"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="leaflet-right"
+        >
+          <div
+            class="leaflet-control leaflet-bar mt-2"
+          >
+            <button
+              class="btn btn-light"
               title="Clear Map"
             >
               <i
@@ -263,6 +279,22 @@ Object {
           >
             <i
               class="bi bi-layout-text-sidebar-reverse"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="leaflet-right"
+      >
+        <div
+          class="leaflet-control leaflet-bar mt-2"
+        >
+          <button
+            class="btn btn-light"
+            title="Play Route"
+          >
+            <i
+              class="bi bi-play-circle"
             />
           </button>
         </div>

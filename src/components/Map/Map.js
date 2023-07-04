@@ -1,8 +1,9 @@
-import { useState, useRef } from 'react'
-import { MapContainer, TileLayer, FeatureGroup } from 'react-leaflet'
+import { useRef, useState } from 'react'
+import { FeatureGroup, MapContainer, TileLayer } from 'react-leaflet'
 
 import Locations from './Locations'
 import MapButton from './MapButton'
+import MarkerIcon from './MarkerIcon'
 import TrafficReport from './TrafficReport'
 import VehicleRoute from './VehicleRoute'
 
@@ -22,16 +23,54 @@ const map = {
 
 const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
+
   const featureGroupRef = useRef()
+  const motionRef = useRef()
 
   const handleShowTrafficReport = () => {
     setTrafficReport(!showTrafficReport)
+  }
+
+  const handlePlayRoute = () => {
+    const locations = [
+      [51.525, -0.09],
+      [51.520, -0.03],
+      [51.522, -0.05],
+      [51.515, -0.12],
+      [51.515, -0.15],
+      [51.505, -0.12],
+      [51.495, -0.10],
+      [51.495, -0.17],
+      [51.495, -0.05],
+      [51.495, -0.07],
+    ]
+
+    if (motionRef.current) {
+      featureGroupRef.current._map.removeLayer(motionRef.current)
+    }
+
+    featureGroupRef.current._map.fitBounds(L.polyline(locations).getBounds())
+
+    motionRef.current = L.motion.polyline(locations, {
+      color: 'lime',
+      weight: 10
+    }, {
+      auto: true,
+      duration: 15000,
+      speed: 5,
+      easing: L.Motion.Ease.linear
+    }, {
+      removeOnEnd: false,
+      showMarker: true,
+      icon: MarkerIcon('suv')
+    }).addTo(featureGroupRef.current._map)
   }
 
   const handleClearMap = () => {
     resetControls()
     featureGroupRef.current.clearLayers()
     featureGroupRef.current._map.setZoom(map.zoom.default)
+    motionRef.current && featureGroupRef.current._map.removeLayer(motionRef.current)
   }
 
   return (
@@ -48,6 +87,12 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         icon='layout-text-sidebar-reverse'
         title='Traffic Report'
         onClick={handleShowTrafficReport}
+      />
+
+      <MapButton
+        icon='play-circle'
+        title='Play Route'
+        onClick={handlePlayRoute}
       />
 
       <MapButton
