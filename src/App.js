@@ -16,6 +16,11 @@ function App() {
     setShowRoute(!showRoute)
   }
 
+  const resetControls = () => {
+    setShowLocations(false)
+    setShowRoute(false)
+  }
+
   const header = (
     <Header
       onShowLocations={handleShowLocations}
@@ -31,6 +36,7 @@ function App() {
       <Map
         showLocations={showLocations}
         showRoute={showRoute}
+        resetControls={resetControls}
       />
     </Layout>
   )

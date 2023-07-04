@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { MapContainer, TileLayer } from 'react-leaflet'
+import { useState, useRef } from 'react'
+import { MapContainer, TileLayer, FeatureGroup } from 'react-leaflet'
 
 import Locations from './Locations'
 import MapButton from './MapButton'
@@ -20,11 +20,18 @@ const map = {
   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 }
 
-const Map = ({ showLocations, showRoute }) => {
+const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
+  const featureGroupRef = useRef()
 
   const handleShowTrafficReport = () => {
     setTrafficReport(!showTrafficReport)
+  }
+
+  const handleClearMap = () => {
+    resetControls()
+    featureGroupRef.current.clearLayers()
+    featureGroupRef.current._map.setZoom(map.zoom.default)
   }
 
   return (
@@ -43,20 +50,28 @@ const Map = ({ showLocations, showRoute }) => {
         onClick={handleShowTrafficReport}
       />
 
-      {
-        showLocations && <Locations />
-      }
+      <MapButton
+        icon='backspace'
+        title='Clear Map'
+        onClick={handleClearMap}
+      />
 
-      {
-        showTrafficReport && (
-          <TrafficReport
-            show={showTrafficReport}
-            onHide={handleShowTrafficReport}
-          />
-        )
-      }
+      <FeatureGroup ref={featureGroupRef}>
+        {
+          showLocations && <Locations />
+        }
 
-      {showRoute && <VehicleRoute />}
+        {
+          showTrafficReport && (
+            <TrafficReport
+              show={showTrafficReport}
+              onHide={handleShowTrafficReport}
+            />
+          )
+        }
+
+        {showRoute && <VehicleRoute />}
+      </FeatureGroup>
     </MapContainer>
   )
 }

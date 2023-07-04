@@ -180,6 +180,22 @@ Object {
                     </button>
                   </div>
                 </div>
+                <div
+                  class="leaflet-right"
+                >
+                  <div
+                    class="leaflet-control leaflet-bar mt-2"
+                  >
+                    <button
+                      class="btn btn-light"
+                      title="Clear Map"
+                    >
+                      <i
+                        class="bi bi-backspace"
+                      />
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -370,6 +386,22 @@ Object {
                   >
                     <i
                       class="bi bi-layout-text-sidebar-reverse"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="leaflet-right"
+              >
+                <div
+                  class="leaflet-control leaflet-bar mt-2"
+                >
+                  <button
+                    class="btn btn-light"
+                    title="Clear Map"
+                  >
+                    <i
+                      class="bi bi-backspace"
                     />
                   </button>
                 </div>
