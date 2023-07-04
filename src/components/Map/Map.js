@@ -7,6 +7,8 @@ import MapButton from './MapButton'
 import MarkerIcon from './MarkerIcon'
 import TrafficReport from './TrafficReport'
 import VehicleRoute from './VehicleRoute'
+import SidebarMapButton from './SidebarMapButton'
+import Sidebar from './Sidebar'
 
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
@@ -24,6 +26,7 @@ const map = {
 
 const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
+  const [showSidebar, setShowSidebar] = useState(false)
 
   const featureGroupRef = useRef()
   const motionRef = useRef()
@@ -32,6 +35,10 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
 
   const handleShowTrafficReport = () => {
     setTrafficReport(!showTrafficReport)
+  }
+
+  const handleShowSidebar = () => {
+    setShowSidebar(!showSidebar)
   }
 
   const handlePlayRoute = () => {
@@ -90,6 +97,19 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         title='Clear Map'
         onClick={handleClearMap}
       />
+
+      <SidebarMapButton onClick={handleShowSidebar} />
+
+      {
+        showSidebar && (
+          <Sidebar
+            title='Title'
+            body={<div>Body</div>}
+            showSidebar={showSidebar}
+            onHide={handleShowSidebar}
+          />
+        )
+      }
 
       <FeatureGroup ref={featureGroupRef}>
         {
