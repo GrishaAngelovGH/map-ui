@@ -7,7 +7,7 @@ const Header = ({ onShowLocations, onShowRoute }) => (
     <div className='col-md-2'>
       <h1 className='text-white'>Map UI</h1>
     </div>
-    <div className='col-md-3'>
+    <div className='col col-md-4 col-lg-3'>
       <ButtonGroup
         onShowLocations={onShowLocations}
         onShowRoute={onShowRoute}
