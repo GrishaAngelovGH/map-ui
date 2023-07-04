@@ -26,86 +26,18 @@ Object {
           <div
             class="leaflet-pane leaflet-marker-pane"
           >
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+            <div
+              class="leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-hide leaflet-interactive"
               role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
+              style="margin-left: -20px; margin-top: -20px; width: 40px; height: 40px; left: 4px; top: 2px; z-index: 2;"
               tabindex="0"
-            />
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-              role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-              tabindex="0"
-            />
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-              role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-              tabindex="0"
-            />
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-              role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-              tabindex="0"
-            />
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-              role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-              tabindex="0"
-            />
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-              role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-              tabindex="0"
-            />
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-              role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-              tabindex="0"
-            />
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-              role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-              tabindex="0"
-            />
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-              role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-              tabindex="0"
-            />
-            <img
-              alt="Marker"
-              class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-              role="button"
-              src="location-pin.png"
-              style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-              tabindex="0"
-            />
+            >
+              <div>
+                <span>
+                  10
+                </span>
+              </div>
+            </div>
           </div>
           <div
             class="leaflet-pane leaflet-tooltip-pane"
@@ -199,86 +131,18 @@ Object {
         <div
           class="leaflet-pane leaflet-marker-pane"
         >
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          <div
+            class="leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-hide leaflet-interactive"
             role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
+            style="margin-left: -20px; margin-top: -20px; width: 40px; height: 40px; left: 4px; top: 2px; z-index: 2;"
             tabindex="0"
-          />
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-            role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-            tabindex="0"
-          />
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-            role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-            tabindex="0"
-          />
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-            role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-            tabindex="0"
-          />
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-            role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-            tabindex="0"
-          />
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-            role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-            tabindex="0"
-          />
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-            role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-            tabindex="0"
-          />
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-            role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-            tabindex="0"
-          />
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-            role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-            tabindex="0"
-          />
-          <img
-            alt="Marker"
-            class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-            role="button"
-            src="location-pin.png"
-            style="margin-left: -25px; margin-top: -25px; width: 50px; height: 50px; left: 0px; top: 0px; z-index: 0;"
-            tabindex="0"
-          />
+          >
+            <div>
+              <span>
+                10
+              </span>
+            </div>
+          </div>
         </div>
         <div
           class="leaflet-pane leaflet-tooltip-pane"

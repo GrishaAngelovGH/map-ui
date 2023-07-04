@@ -5,7 +5,7 @@ import Locations from './Locations'
 
 test('should render Locations component', () => {
   const view = render(
-    <MapContainer>
+    <MapContainer minZoom={10} maxZoom={16}>
       <Locations />
     </MapContainer>
   )

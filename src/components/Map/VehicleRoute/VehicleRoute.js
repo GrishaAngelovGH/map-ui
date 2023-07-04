@@ -1,7 +1,6 @@
-import { Fragment } from 'react'
-
 import L from 'leaflet'
 import { Marker, Polyline, useMap } from 'react-leaflet'
+import MarkerClusterGroup from 'react-leaflet-cluster'
 import MarkerIcon from '../MarkerIcon'
 
 const polyline = [
@@ -23,7 +22,7 @@ const VehicleRoute = () => {
   map.fitBounds(L.polyline(polyline).getBounds())
 
   return (
-    <Fragment>
+    <MarkerClusterGroup chunkedLoading maxClusterRadius={50} showCoverageOnHover={false}>
       <Polyline pathOptions={limeOptions} positions={polyline} />
       {
         polyline.map((v, i) => {
@@ -34,7 +33,7 @@ const VehicleRoute = () => {
           )
         })
       }
-    </Fragment>
+    </MarkerClusterGroup>
   )
 }
 

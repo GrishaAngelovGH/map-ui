@@ -14,7 +14,7 @@ const map = {
   lng: -0.09,
   zoom: {
     default: 13,
-    min: 12,
+    min: 10,
     max: 16
   },
   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'

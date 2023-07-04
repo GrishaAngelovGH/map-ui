@@ -1,5 +1,5 @@
-import { Fragment } from 'react'
 import { Marker, useMap } from 'react-leaflet'
+import MarkerClusterGroup from 'react-leaflet-cluster'
 import MarkerIcon from '../MarkerIcon'
 import Popup from '../Popup'
 
@@ -21,7 +21,7 @@ const Locations = () => {
   map.fitBounds(L.polyline(locations).getBounds())
 
   return (
-    <Fragment>
+    <MarkerClusterGroup chunkedLoading maxClusterRadius={90} showCoverageOnHover={false}>
       {
         locations.map((location, i) => (
           <Marker key={i} position={location} icon={MarkerIcon('location')}>
@@ -29,7 +29,7 @@ const Locations = () => {
           </Marker>
         ))
       }
-    </Fragment>
+    </MarkerClusterGroup>
   )
 }
 
