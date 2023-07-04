@@ -168,7 +168,7 @@ Object {
                   class="leaflet-right"
                 >
                   <div
-                    class="leaflet-control leaflet-bar mt-2"
+                    class="leaflet-control mt-2"
                   >
                     <button
                       class="btn btn-light"
@@ -184,7 +184,7 @@ Object {
                   class="leaflet-right"
                 >
                   <div
-                    class="leaflet-control leaflet-bar mt-2"
+                    class="leaflet-control mt-2"
                   >
                     <button
                       class="btn btn-light"
@@ -200,7 +200,7 @@ Object {
                   class="leaflet-right"
                 >
                   <div
-                    class="leaflet-control leaflet-bar mt-2"
+                    class="leaflet-control mt-2"
                   >
                     <button
                       class="btn btn-light"
@@ -394,7 +394,7 @@ Object {
                 class="leaflet-right"
               >
                 <div
-                  class="leaflet-control leaflet-bar mt-2"
+                  class="leaflet-control mt-2"
                 >
                   <button
                     class="btn btn-light"
@@ -410,7 +410,7 @@ Object {
                 class="leaflet-right"
               >
                 <div
-                  class="leaflet-control leaflet-bar mt-2"
+                  class="leaflet-control mt-2"
                 >
                   <button
                     class="btn btn-light"
@@ -426,7 +426,7 @@ Object {
                 class="leaflet-right"
               >
                 <div
-                  class="leaflet-control leaflet-bar mt-2"
+                  class="leaflet-control mt-2"
                 >
                   <button
                     class="btn btn-light"
