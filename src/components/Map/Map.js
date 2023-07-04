@@ -5,10 +5,10 @@ import LocationsContext from '../../LocationsContext'
 import Locations from './Locations'
 import MapButton from './MapButton'
 import MarkerIcon from './MarkerIcon'
+import Sidebar from './Sidebar'
+import SidebarMapButton from './SidebarMapButton'
 import TrafficReport from './TrafficReport'
 import VehicleRoute from './VehicleRoute'
-import SidebarMapButton from './SidebarMapButton'
-import Sidebar from './Sidebar'
 
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
@@ -70,6 +70,12 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
     motionRef.current && featureGroupRef.current._map.removeLayer(motionRef.current)
   }
 
+  const mapButtons = [
+    { icon: 'layout-text-sidebar-reverse', title: 'Traffic Report', onClick: handleShowTrafficReport },
+    { icon: 'play-circle', title: 'Play Route', onClick: handlePlayRoute },
+    { icon: 'backspace', title: 'Clear Map', onClick: handleClearMap }
+  ]
+
   return (
     <MapContainer
       center={[map.lat, map.lng]}
@@ -80,23 +86,16 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
     >
       <TileLayer url={map.url} />
 
-      <MapButton
-        icon='layout-text-sidebar-reverse'
-        title='Traffic Report'
-        onClick={handleShowTrafficReport}
-      />
-
-      <MapButton
-        icon='play-circle'
-        title='Play Route'
-        onClick={handlePlayRoute}
-      />
-
-      <MapButton
-        icon='backspace'
-        title='Clear Map'
-        onClick={handleClearMap}
-      />
+      {
+        mapButtons.map((v, i) => (
+          <MapButton
+            key={i}
+            icon={v.icon}
+            title={v.title}
+            onClick={v.onClick}
+          />
+        ))
+      }
 
       <SidebarMapButton onClick={handleShowSidebar} />
 
@@ -112,9 +111,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
       }
 
       <FeatureGroup ref={featureGroupRef}>
-        {
-          showLocations && <Locations />
-        }
+        {showLocations && <Locations />}
 
         {
           showTrafficReport && (
