@@ -5,11 +5,11 @@ import Layout from './components/Layout'
 import Map from './components/Map'
 
 function App() {
-  const [showMarkers, setShowMarkers] = useState(false)
+  const [showLocations, setShowLocations] = useState(false)
   const [showRoute, setShowRoute] = useState(false)
 
-  const handleShowMarkers = () => {
-    setShowMarkers(!showMarkers)
+  const handleShowLocations = () => {
+    setShowLocations(!showLocations)
   }
 
   const handleShowRoute = () => {
@@ -18,7 +18,7 @@ function App() {
 
   const header = (
     <Header
-      onShowMarkers={handleShowMarkers}
+      onShowLocations={handleShowLocations}
       onShowRoute={handleShowRoute}
     />
   )
@@ -29,7 +29,7 @@ function App() {
       footer={<h1>Footer</h1>}
     >
       <Map
-        showMarkers={showMarkers}
+        showLocations={showLocations}
         showRoute={showRoute}
       />
     </Layout>

@@ -28,7 +28,7 @@ Object {
               class="btn btn-outline-success"
               type="button"
             >
-              Show Markers
+              Show Locations
             </button>
             <button
               class="btn btn-outline-success"
@@ -65,7 +65,7 @@ Object {
             class="btn btn-outline-success"
             type="button"
           >
-            Show Markers
+            Show Locations
           </button>
           <button
             class="btn btn-outline-success"

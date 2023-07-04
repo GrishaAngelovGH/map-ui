@@ -1,16 +1,13 @@
 import { useState } from 'react'
-import { MapContainer, Marker, TileLayer } from 'react-leaflet'
+import { MapContainer, TileLayer } from 'react-leaflet'
 
+import Locations from './Locations'
 import MapButton from './MapButton'
-import MarkerIcon from './MarkerIcon'
-import Popup from './Popup'
 import TrafficReport from './TrafficReport'
 import VehicleRoute from './VehicleRoute'
 
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
-
-import locations from './locations'
 
 const map = {
   lat: 51.505,
@@ -19,7 +16,7 @@ const map = {
   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 }
 
-const Map = ({ showMarkers, showRoute }) => {
+const Map = ({ showLocations, showRoute }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
 
   const handleShowTrafficReport = () => {
@@ -37,11 +34,7 @@ const Map = ({ showMarkers, showRoute }) => {
       />
 
       {
-        showMarkers && locations.map((location, i) => (
-          <Marker key={i} position={location} icon={MarkerIcon('location')}>
-            <Popup />
-          </Marker>
-        ))
+        showLocations && <Locations />
       }
 
       {
