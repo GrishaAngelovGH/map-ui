@@ -2,9 +2,9 @@ import { useContext, useRef, useState } from 'react'
 import { FeatureGroup, MapContainer, TileLayer } from 'react-leaflet'
 
 import LocationsContext from '../../LocationsContext'
-import Sidebar from '../Sidebar'
 import Locations from './Locations'
 import MapButton from './MapButton'
+import MapSidebar from './MapSidebar'
 import MarkerIcon from './MarkerIcon'
 import SidebarMapButton from './SidebarMapButton'
 import TrafficReport from './TrafficReport'
@@ -101,9 +101,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
 
       {
         showSidebar && (
-          <Sidebar
-            title='Title'
-            body={<div>Body</div>}
+          <MapSidebar
             showSidebar={showSidebar}
             onHide={handleShowSidebar}
           />
