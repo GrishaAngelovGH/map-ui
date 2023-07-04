@@ -12,7 +12,11 @@ import './Map.scss'
 const map = {
   lat: 51.505,
   lng: -0.09,
-  zoom: 13,
+  zoom: {
+    default: 13,
+    min: 12,
+    max: 16
+  },
   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 }
 
@@ -24,7 +28,13 @@ const Map = ({ showLocations, showRoute }) => {
   }
 
   return (
-    <MapContainer center={[map.lat, map.lng]} zoom={map.zoom} className='react-leaflet-map'>
+    <MapContainer
+      center={[map.lat, map.lng]}
+      zoom={map.zoom.default}
+      minZoom={map.zoom.min}
+      maxZoom={map.zoom.max}
+      className='react-leaflet-map'
+    >
       <TileLayer url={map.url} />
 
       <MapButton
