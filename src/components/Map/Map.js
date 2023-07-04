@@ -1,6 +1,7 @@
-import { useRef, useState } from 'react'
+import { useContext, useRef, useState } from 'react'
 import { FeatureGroup, MapContainer, TileLayer } from 'react-leaflet'
 
+import LocationsContext from '../../LocationsContext'
 import Locations from './Locations'
 import MapButton from './MapButton'
 import MarkerIcon from './MarkerIcon'
@@ -27,24 +28,13 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
   const featureGroupRef = useRef()
   const motionRef = useRef()
 
+  const locations = useContext(LocationsContext)
+
   const handleShowTrafficReport = () => {
     setTrafficReport(!showTrafficReport)
   }
 
   const handlePlayRoute = () => {
-    const locations = [
-      [51.525, -0.09],
-      [51.520, -0.03],
-      [51.522, -0.05],
-      [51.515, -0.12],
-      [51.515, -0.15],
-      [51.505, -0.12],
-      [51.495, -0.10],
-      [51.495, -0.17],
-      [51.495, -0.05],
-      [51.495, -0.07],
-    ]
-
     if (motionRef.current) {
       featureGroupRef.current._map.removeLayer(motionRef.current)
     }
