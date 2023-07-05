@@ -2,6 +2,7 @@ import { useContext, useRef, useState } from 'react'
 import { FeatureGroup, MapContainer, TileLayer } from 'react-leaflet'
 
 import LocationsContext from '../../LocationsContext'
+import CityArea from './CityArea'
 import Locations from './Locations'
 import MapButton from './MapButton'
 import MapSidebar from './MapSidebar'
@@ -26,6 +27,7 @@ const map = {
 
 const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
+  const [showCityArea, setShowCityArea] = useState(false)
   const [showSidebar, setShowSidebar] = useState(false)
 
   const featureGroupRef = useRef()
@@ -63,6 +65,10 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
     }).addTo(featureGroupRef.current._map)
   }
 
+  const handleShowCityArea = () => {
+    setShowCityArea(!showCityArea)
+  }
+
   const handleClearMap = () => {
     resetControls()
     featureGroupRef.current.clearLayers()
@@ -73,6 +79,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
   const mapButtons = [
     { icon: 'layout-text-sidebar-reverse', title: 'Traffic Report', onClick: handleShowTrafficReport },
     { icon: 'play-circle', title: 'Play Route', onClick: handlePlayRoute },
+    { icon: 'hexagon', title: 'City Area', onClick: handleShowCityArea },
     { icon: 'backspace', title: 'Clear Map', onClick: handleClearMap }
   ]
 
@@ -121,6 +128,8 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         }
 
         {showRoute && <VehicleRoute />}
+
+        {showCityArea && <CityArea />}
       </FeatureGroup>
     </MapContainer>
   )
