@@ -46,7 +46,8 @@ Object {
           class="col-md-2"
         >
           <i
-            class="bi bi-check-square-fill text-primary fs-1"
+            class="bi bi-chevron-right bg-primary text-white fs-1 rounded"
+            role="button"
           />
         </div>
       </div>
@@ -94,7 +95,8 @@ Object {
         class="col-md-2"
       >
         <i
-          class="bi bi-check-square-fill text-primary fs-1"
+          class="bi bi-chevron-right bg-primary text-white fs-1 rounded"
+          role="button"
         />
       </div>
     </div>
@@ -199,7 +201,8 @@ Object {
           class="col-md-2"
         >
           <i
-            class="bi bi-check-square-fill text-primary fs-1"
+            class="bi bi-chevron-right bg-primary text-white fs-1 rounded"
+            role="button"
           />
         </div>
       </div>
@@ -247,7 +250,8 @@ Object {
         class="col-md-2"
       >
         <i
-          class="bi bi-check-square-fill text-primary fs-1"
+          class="bi bi-chevron-right bg-primary text-white fs-1 rounded"
+          role="button"
         />
       </div>
     </div>
