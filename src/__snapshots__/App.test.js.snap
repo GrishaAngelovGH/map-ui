@@ -247,14 +247,35 @@ Object {
             </div>
           </div>
           <div
-            class="row g-0"
+            class="row g-0 fixed-bottom"
           >
             <div
               class="col-md-12"
             >
-              <h1>
-                Footer
-              </h1>
+              <div
+                class="row g-0 justify-content-center align-items-center bg-footer p-2"
+              >
+                <div
+                  class="col-2 col-md-2"
+                >
+                  <div
+                    class="btn-group"
+                    role="group"
+                  >
+                    <button
+                      class="btn btn-outline-success"
+                      title="Underground Locations"
+                      type="button"
+                    >
+                      <img
+                        class=""
+                        src="ldn-underground.png"
+                        width="40"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -504,14 +525,35 @@ Object {
           </div>
         </div>
         <div
-          class="row g-0"
+          class="row g-0 fixed-bottom"
         >
           <div
             class="col-md-12"
           >
-            <h1>
-              Footer
-            </h1>
+            <div
+              class="row g-0 justify-content-center align-items-center bg-footer p-2"
+            >
+              <div
+                class="col-2 col-md-2"
+              >
+                <div
+                  class="btn-group"
+                  role="group"
+                >
+                  <button
+                    class="btn btn-outline-success"
+                    title="Underground Locations"
+                    type="button"
+                  >
+                    <img
+                      class=""
+                      src="ldn-underground.png"
+                      width="40"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

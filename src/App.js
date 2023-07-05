@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Layout from './components/Layout'
 import Map from './components/Map'
@@ -31,7 +32,7 @@ function App() {
   return (
     <Layout
       header={header}
-      footer={<h1>Footer</h1>}
+      footer={<Footer />}
     >
       <Map
         showLocations={showLocations}
