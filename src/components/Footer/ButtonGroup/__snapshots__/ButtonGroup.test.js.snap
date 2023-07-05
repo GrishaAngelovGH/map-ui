@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Header/ButtonGroup component 1`] = `
+exports[`should render Footer/ButtonGroup component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -11,15 +11,14 @@ Object {
       >
         <button
           class="btn btn-outline-success"
+          title="Underground Locations"
           type="button"
         >
-          Show Locations
-        </button>
-        <button
-          class="btn btn-outline-success"
-          type="button"
-        >
-          Show Route
+          <img
+            class=""
+            src="ldn-underground.png"
+            width="40"
+          />
         </button>
       </div>
     </div>
@@ -31,15 +30,14 @@ Object {
     >
       <button
         class="btn btn-outline-success"
+        title="Underground Locations"
         type="button"
       >
-        Show Locations
-      </button>
-      <button
-        class="btn btn-outline-success"
-        type="button"
-      >
-        Show Route
+        <img
+          class=""
+          src="ldn-underground.png"
+          width="40"
+        />
       </button>
     </div>
   </div>,
