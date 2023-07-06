@@ -8,6 +8,7 @@ import MapButton from './MapButton'
 import MapMenu from './MapMenu'
 import MarkerIcon from './MarkerIcon'
 import SidebarMapButton from './SidebarMapButton'
+import BoroughsSidebar from './Sidebars/BoroughsSidebar'
 import PlacesSidebar from './Sidebars/PlacesSidebar'
 import TrafficReport from './TrafficReport'
 import UndergroundLocations from './UndergroundLocations'
@@ -31,6 +32,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
   const [showCityArea, setShowCityArea] = useState(false)
   const [showPlacesSidebar, setShowPlacesSidebar] = useState(false)
+  const [showBoroughsSidebar, setShowBoroughsSidebar] = useState(false)
   const [showUndergroundLocations, setShowUndergroundLocations] = useState(false)
 
   const featureGroupRef = useRef()
@@ -44,6 +46,10 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
 
   const handleShowPlacesSidebar = () => {
     setShowPlacesSidebar(!showPlacesSidebar)
+  }
+
+  const handleShowBoroughsSidebar = () => {
+    setShowBoroughsSidebar(!showBoroughsSidebar)
   }
 
   const handlePlayRoute = () => {
@@ -104,6 +110,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
 
       <MapMenu
         onShowUndergroundLocations={handleShowUndergroundLocations}
+        onShowBoroughs={handleShowBoroughsSidebar}
       />
 
       {
@@ -124,6 +131,15 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
           <PlacesSidebar
             showSidebar={showPlacesSidebar}
             onHide={handleShowPlacesSidebar}
+          />
+        )
+      }
+
+      {
+        showBoroughsSidebar && (
+          <BoroughsSidebar
+            showSidebar={showBoroughsSidebar}
+            onHide={handleShowBoroughsSidebar}
           />
         )
       }

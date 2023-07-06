@@ -185,6 +185,17 @@ Object {
                           width="40"
                         />
                       </button>
+                      <button
+                        class="btn btn-outline-success"
+                        title="London Boroughs"
+                        type="button"
+                      >
+                        <img
+                          class=""
+                          src="map.png"
+                          width="40"
+                        />
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -452,6 +463,17 @@ Object {
                       <img
                         class=""
                         src="ldn-underground.png"
+                        width="40"
+                      />
+                    </button>
+                    <button
+                      class="btn btn-outline-success"
+                      title="London Boroughs"
+                      type="button"
+                    >
+                      <img
+                        class=""
+                        src="map.png"
                         width="40"
                       />
                     </button>
