@@ -4,10 +4,7 @@ import Layout from './Layout'
 
 test('should render Layout component', () => {
   const view = render(
-    <Layout
-      header={<h1>Header</h1>}
-      footer={<h1>Footer</h1>}
-    >
+    <Layout header={<h1>Header</h1>}>
       <h1>Body</h1>
     </Layout>
   )
@@ -30,16 +27,6 @@ test('should render Layout.Body component', () => {
     <Layout.Body>
       <h1>Body</h1>
     </Layout.Body>
-  )
-
-  expect(view).toMatchSnapshot()
-})
-
-test('should render Layout.Footer component', () => {
-  const view = render(
-    <Layout.Footer>
-      <h1>Footer</h1>
-    </Layout.Footer>
   )
 
   expect(view).toMatchSnapshot()

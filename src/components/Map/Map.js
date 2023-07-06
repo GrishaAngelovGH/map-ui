@@ -5,12 +5,13 @@ import LocationsContext from '../../LocationsContext'
 import CityArea from './CityArea'
 import Locations from './Locations'
 import MapButton from './MapButton'
+import MapMenu from './MapMenu'
 import MapSidebar from './MapSidebar'
 import MarkerIcon from './MarkerIcon'
 import SidebarMapButton from './SidebarMapButton'
 import TrafficReport from './TrafficReport'
-import VehicleRoute from './VehicleRoute'
 import UndergroundLocations from './UndergroundLocations'
+import VehicleRoute from './VehicleRoute'
 
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
@@ -26,10 +27,11 @@ const map = {
   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 }
 
-const Map = ({ showLocations, showRoute, showUndergroundLocations, resetControls }) => {
+const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
   const [showCityArea, setShowCityArea] = useState(false)
   const [showSidebar, setShowSidebar] = useState(false)
+  const [showUndergroundLocations, setShowUndergroundLocations] = useState(false)
 
   const featureGroupRef = useRef()
   const motionRef = useRef()
@@ -70,8 +72,14 @@ const Map = ({ showLocations, showRoute, showUndergroundLocations, resetControls
     setShowCityArea(!showCityArea)
   }
 
+  const handleShowUndergroundLocations = () => {
+    setShowUndergroundLocations(!showUndergroundLocations)
+  }
+
   const handleClearMap = () => {
     resetControls()
+    setShowCityArea(false)
+    setShowUndergroundLocations(false)
     featureGroupRef.current.clearLayers()
     featureGroupRef.current._map.setZoom(map.zoom.default)
     motionRef.current && featureGroupRef.current._map.removeLayer(motionRef.current)
@@ -93,6 +101,10 @@ const Map = ({ showLocations, showRoute, showUndergroundLocations, resetControls
       className='react-leaflet-map'
     >
       <TileLayer url={map.url} />
+
+      <MapMenu
+        onShowUndergroundLocations={handleShowUndergroundLocations}
+      />
 
       {
         mapButtons.map((v, i) => (

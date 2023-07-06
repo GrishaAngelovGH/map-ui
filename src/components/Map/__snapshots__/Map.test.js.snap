@@ -111,6 +111,30 @@ Object {
           </div>
         </div>
         <div
+          class="row g-0 justify-content-center align-items-center"
+        >
+          <div
+            class="col-10 col-md-4 bg-map-menu rounded border border-2 shadow p-2 d-flex justify-content-center"
+          >
+            <div
+              class="btn-group"
+              role="group"
+            >
+              <button
+                class="btn btn-outline-success"
+                title="Underground Locations"
+                type="button"
+              >
+                <img
+                  class=""
+                  src="ldn-underground.png"
+                  width="40"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
           class="leaflet-right"
         >
           <div
@@ -295,6 +319,30 @@ Object {
             >
               Leaflet
             </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row g-0 justify-content-center align-items-center"
+      >
+        <div
+          class="col-10 col-md-4 bg-map-menu rounded border border-2 shadow p-2 d-flex justify-content-center"
+        >
+          <div
+            class="btn-group"
+            role="group"
+          >
+            <button
+              class="btn btn-outline-success"
+              title="Underground Locations"
+              type="button"
+            >
+              <img
+                class=""
+                src="ldn-underground.png"
+                width="40"
+              />
+            </button>
           </div>
         </div>
       </div>

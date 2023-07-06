@@ -1,4 +1,4 @@
-const Layout = ({ header, children, footer }) => (
+const Layout = ({ header, children }) => (
   <div className='row g-0'>
     <div className='col-md-12'>
       <Layout.Header>
@@ -8,10 +8,6 @@ const Layout = ({ header, children, footer }) => (
       <Layout.Body>
         {children}
       </Layout.Body>
-
-      <Layout.Footer>
-        {footer}
-      </Layout.Footer>
     </div>
   </div>
 )
@@ -25,14 +21,6 @@ Layout.Header = ({ children }) => (
 )
 
 Layout.Body = ({ children }) => (
-  <div className='row g-0'>
-    <div className='col-md-12'>
-      {children}
-    </div>
-  </div>
-)
-
-Layout.Footer = ({ children }) => (
   <div className='row g-0'>
     <div className='col-md-12'>
       {children}
