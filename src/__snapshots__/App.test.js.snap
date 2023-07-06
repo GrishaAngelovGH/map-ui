@@ -247,16 +247,16 @@ Object {
             </div>
           </div>
           <div
-            class="row g-0 fixed-bottom"
+            class="row g-0"
           >
             <div
               class="col-md-12"
             >
               <div
-                class="row g-0 justify-content-center align-items-center bg-footer p-2"
+                class="row g-0 justify-content-center align-items-center"
               >
                 <div
-                  class="col-2 col-md-2"
+                  class="col-10 col-md-4 bg-footer rounded border border-2 shadow p-2 d-flex justify-content-center"
                 >
                   <div
                     class="btn-group"
@@ -525,16 +525,16 @@ Object {
           </div>
         </div>
         <div
-          class="row g-0 fixed-bottom"
+          class="row g-0"
         >
           <div
             class="col-md-12"
           >
             <div
-              class="row g-0 justify-content-center align-items-center bg-footer p-2"
+              class="row g-0 justify-content-center align-items-center"
             >
               <div
-                class="col-2 col-md-2"
+                class="col-10 col-md-4 bg-footer rounded border border-2 shadow p-2 d-flex justify-content-center"
               >
                 <div
                   class="btn-group"

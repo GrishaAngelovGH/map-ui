@@ -1,4 +1,11 @@
 .react-leaflet-map {
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: 100vh;
+}
+
+@media screen and (min-width: 992px) {
+  .react-leaflet-map {
+    width: 100%;
+    height: calc(100vh - 4rem);
+  }
 }
