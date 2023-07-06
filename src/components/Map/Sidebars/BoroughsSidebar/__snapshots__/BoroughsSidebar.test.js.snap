@@ -3,8 +3,304 @@
 exports[`should render BoroughsSidebar component 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": <body
+    class="modal-open"
+    data-rr-ui-modal-open=""
+    style="padding-right: 1024px;"
+  >
     <div />
+    <div
+      aria-modal="true"
+      class="offcanvas offcanvas-start offcanvas-toggling show"
+      role="dialog"
+      style="visibility: visible;"
+      tabindex="-1"
+    >
+      <div
+        class="offcanvas-header"
+      >
+        <div
+          class="offcanvas-title h5"
+        >
+          London Boroughs
+        </div>
+        <button
+          aria-label="Close"
+          class="btn-close"
+          type="button"
+        />
+      </div>
+      <div
+        class="offcanvas-body"
+      >
+        <div>
+          <div>
+            <h5>
+              #
+              01
+               
+              Barking and Dagenham
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              02
+               
+              Barnet
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              03
+               
+              Bexley
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              04
+               
+              Brent
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              05
+               
+              Bromley
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              06
+               
+              Camden
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              07
+               
+              City of London
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              08
+               
+              Ealing
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              09
+               
+              Enfield
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              10
+               
+              Greenwich
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              11
+               
+              Hackney
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              12
+               
+              Hammersmith and Fulham
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              13
+               
+              Haringey
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              14
+               
+              Harrow
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              15
+               
+              Havering
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              16
+               
+              Hillingdon
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              17
+               
+              Hounslow
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              18
+               
+              Islington
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              19
+               
+              Kensington and Chelsea
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              20
+               
+              Kingston upon Thames
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              21
+               
+              Lambeth
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              22
+               
+              Lewisham
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              23
+               
+              Merton
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              24
+               
+              Newham
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              25
+               
+              Redbridge
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              26
+               
+              Richmond upon Thames
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              27
+               
+              Southwark
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              28
+               
+              Sutton
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              29
+               
+              Tower Hamlets
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              30
+               
+              Waltham Forest
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              31
+               
+              Wandsworth
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              32
+               
+              Westminster
+            </h5>
+          </div>
+          <div>
+            <h5>
+              #
+              33
+               
+              Croydon
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>,
   "container": <div />,
   "debug": [Function],
