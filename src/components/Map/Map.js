@@ -6,9 +6,9 @@ import CityArea from './CityArea'
 import Locations from './Locations'
 import MapButton from './MapButton'
 import MapMenu from './MapMenu'
-import MapSidebar from './MapSidebar'
 import MarkerIcon from './MarkerIcon'
 import SidebarMapButton from './SidebarMapButton'
+import PlacesSidebar from './Sidebars/PlacesSidebar'
 import TrafficReport from './TrafficReport'
 import UndergroundLocations from './UndergroundLocations'
 import VehicleRoute from './VehicleRoute'
@@ -30,7 +30,7 @@ const map = {
 const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
   const [showCityArea, setShowCityArea] = useState(false)
-  const [showSidebar, setShowSidebar] = useState(false)
+  const [showPlacesSidebar, setShowPlacesSidebar] = useState(false)
   const [showUndergroundLocations, setShowUndergroundLocations] = useState(false)
 
   const featureGroupRef = useRef()
@@ -42,8 +42,8 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
     setTrafficReport(!showTrafficReport)
   }
 
-  const handleShowSidebar = () => {
-    setShowSidebar(!showSidebar)
+  const handleShowPlacesSidebar = () => {
+    setShowPlacesSidebar(!showPlacesSidebar)
   }
 
   const handlePlayRoute = () => {
@@ -117,13 +117,13 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         ))
       }
 
-      <SidebarMapButton onClick={handleShowSidebar} />
+      <SidebarMapButton onClick={handleShowPlacesSidebar} />
 
       {
-        showSidebar && (
-          <MapSidebar
-            showSidebar={showSidebar}
-            onHide={handleShowSidebar}
+        showPlacesSidebar && (
+          <PlacesSidebar
+            showSidebar={showPlacesSidebar}
+            onHide={handleShowPlacesSidebar}
           />
         )
       }

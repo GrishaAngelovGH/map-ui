@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 
-import MapSidebar from './MapSidebar'
+import PlacesSidebar from './PlacesSidebar'
 
 window.matchMedia = window.matchMedia || function () {
   return {
@@ -10,8 +10,8 @@ window.matchMedia = window.matchMedia || function () {
   }
 }
 
-test('should render MapSidebar component', () => {
-  const view = render(<MapSidebar showSidebar />)
+test('should render PlacesSidebar component', () => {
+  const view = render(<PlacesSidebar showSidebar />)
 
   expect(view).toMatchSnapshot()
 })

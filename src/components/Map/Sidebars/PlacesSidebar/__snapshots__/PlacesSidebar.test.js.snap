@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render MapSidebar component 1`] = `
+exports[`should render PlacesSidebar component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body

@@ -1,9 +1,9 @@
 import { Fragment, useState } from 'react'
-import Sidebar from '../../Sidebar'
+import Sidebar from '../../../Sidebar'
 import Place from './Place'
 import PlaceModal from './Place/PlaceModal'
 
-const MapSidebar = ({ showSidebar, onHide }) => {
+const PlacesSidebar = ({ showSidebar, onHide }) => {
   const [showPlace, setShowPlace] = useState(false)
   const [placeId, setPlaceId] = useState(0)
 
@@ -62,4 +62,4 @@ const MapSidebar = ({ showSidebar, onHide }) => {
   )
 }
 
-export default MapSidebar
+export default PlacesSidebar
