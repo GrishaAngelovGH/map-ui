@@ -8,6 +8,7 @@ import Map from './components/Map'
 function App() {
   const [showLocations, setShowLocations] = useState(false)
   const [showRoute, setShowRoute] = useState(false)
+  const [showUndergroundLocations, setShowUndergroundLocations] = useState(false)
 
   const handleShowLocations = () => {
     setShowLocations(!showLocations)
@@ -17,9 +18,14 @@ function App() {
     setShowRoute(!showRoute)
   }
 
+  const handleShowUndergroundLocations = () => {
+    setShowUndergroundLocations(!showUndergroundLocations)
+  }
+
   const resetControls = () => {
     setShowLocations(false)
     setShowRoute(false)
+    setShowUndergroundLocations(false)
   }
 
   const header = (
@@ -29,14 +35,21 @@ function App() {
     />
   )
 
+  const footer = (
+    <Footer
+      onShowUndergroundLocations={handleShowUndergroundLocations}
+    />
+  )
+
   return (
     <Layout
       header={header}
-      footer={<Footer />}
+      footer={footer}
     >
       <Map
         showLocations={showLocations}
         showRoute={showRoute}
+        showUndergroundLocations={showUndergroundLocations}
         resetControls={resetControls}
       />
     </Layout>

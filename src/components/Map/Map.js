@@ -10,6 +10,7 @@ import MarkerIcon from './MarkerIcon'
 import SidebarMapButton from './SidebarMapButton'
 import TrafficReport from './TrafficReport'
 import VehicleRoute from './VehicleRoute'
+import UndergroundLocations from './UndergroundLocations'
 
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
@@ -25,7 +26,7 @@ const map = {
   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 }
 
-const Map = ({ showLocations, showRoute, resetControls }) => {
+const Map = ({ showLocations, showRoute, showUndergroundLocations, resetControls }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
   const [showCityArea, setShowCityArea] = useState(false)
   const [showSidebar, setShowSidebar] = useState(false)
@@ -130,6 +131,8 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         {showRoute && <VehicleRoute />}
 
         {showCityArea && <CityArea />}
+
+        {showUndergroundLocations && <UndergroundLocations />}
       </FeatureGroup>
     </MapContainer>
   )
