@@ -1,5 +1,5 @@
 import { useContext, useRef, useState } from 'react'
-import { FeatureGroup, MapContainer, TileLayer } from 'react-leaflet'
+import { FeatureGroup, MapContainer, Polygon, TileLayer } from 'react-leaflet'
 
 import LocationsContext from '../../contexts/LocationsContext'
 import CityArea from './CityArea'
@@ -34,6 +34,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showPlacesSidebar, setShowPlacesSidebar] = useState(false)
   const [showBoroughsSidebar, setShowBoroughsSidebar] = useState(false)
   const [showUndergroundLocations, setShowUndergroundLocations] = useState(false)
+  const [boroughCoordinates, setBoroughCoordinates] = useState([])
 
   const featureGroupRef = useRef()
   const motionRef = useRef()
@@ -49,6 +50,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
   }
 
   const handleShowBoroughsSidebar = () => {
+    handleClearMap()
     setShowBoroughsSidebar(!showBoroughsSidebar)
   }
 
@@ -82,10 +84,16 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
     setShowUndergroundLocations(!showUndergroundLocations)
   }
 
+  const handleBoroughClick = coords => {
+    setBoroughCoordinates(coords)
+    featureGroupRef.current._map.fitBounds(L.polyline(coords).getBounds())
+  }
+
   const handleClearMap = () => {
     resetControls()
     setShowCityArea(false)
     setShowUndergroundLocations(false)
+    setBoroughCoordinates([])
     featureGroupRef.current.clearLayers()
     featureGroupRef.current._map.setZoom(map.zoom.default)
     motionRef.current && featureGroupRef.current._map.removeLayer(motionRef.current)
@@ -140,6 +148,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
           <BoroughsSidebar
             showSidebar={showBoroughsSidebar}
             onHide={handleShowBoroughsSidebar}
+            onBoroughClick={handleBoroughClick}
           />
         )
       }
@@ -161,6 +170,12 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         {showCityArea && <CityArea />}
 
         {showUndergroundLocations && <UndergroundLocations />}
+
+        {
+          boroughCoordinates.length > 0 && (
+            <Polygon pathOptions={{ color: 'darkblue' }} positions={boroughCoordinates} />
+          )
+        }
       </FeatureGroup>
     </MapContainer>
   )
