@@ -1,10 +1,16 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import LondonAreaContext from '../../../../contexts/LondonAreaContext'
 import Sidebar from '../../../Sidebar'
 import Borough from './Borough'
 
 const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
+  const [boroughId, setBoroughId] = useState(0)
   const londonArea = useContext(LondonAreaContext)
+
+  const handleClick = (id, coords) => {
+    setBoroughId(id)
+    onBoroughClick(coords)
+  }
 
   const body = (
     <div className='row p-1'>
@@ -16,12 +22,13 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
             return (
               <Borough
                 key={id}
-                id={id.toString().padStart(2, '0')}
+                id={id}
+                active={id === boroughId}
                 name={v.properties.name}
                 code={v.properties.code}
                 areaHectares={v.properties.area_hectares}
                 coordinates={v.geometry.coordinates[0][0]}
-                onClick={onBoroughClick}
+                onClick={handleClick}
               />
             )
           })
