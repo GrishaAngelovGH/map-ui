@@ -2,8 +2,13 @@ import { useState } from 'react'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import ToggleButton from 'react-bootstrap/ToggleButton'
 
-const RadioButtonGroup = ({ radios }) => {
-  const [radioValue, setRadioValue] = useState('1')
+const RadioButtonGroup = ({ initialValue, radios, onClick }) => {
+  const [radioValue, setRadioValue] = useState(initialValue)
+
+  const handleClick = ({ currentTarget: { value } }) => {
+    setRadioValue(value)
+    onClick(value)
+  }
 
   return (
     <ButtonGroup>
@@ -17,7 +22,7 @@ const RadioButtonGroup = ({ radios }) => {
             name='radio'
             value={radio.value}
             checked={radioValue === radio.value}
-            onChange={(e) => setRadioValue(e.currentTarget.value)}
+            onChange={handleClick}
           >
             {radio.name}
           </ToggleButton>
