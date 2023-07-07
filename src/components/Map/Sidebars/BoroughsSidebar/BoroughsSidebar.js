@@ -26,6 +26,36 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
     if (!favoriteBoroughs) window.localStorage.setItem('boroughs', '')
   }, [])
 
+  const radioButtonGroups = [
+    {
+      label: 'View',
+      radioButtonGroup: (
+        <RadioButtonGroup
+          initialValue='all'
+          radios={[
+            { name: 'All', value: 'all' },
+            { name: 'Favorites', value: 'favorites' }
+          ]}
+          onClick={changeViewClick}
+        />
+      )
+    },
+    {
+      label: 'Sort ASC By',
+      radioButtonGroup: (
+        <RadioButtonGroup
+          initialValue='id'
+          radios={[
+            { name: 'Id', value: 'id' },
+            { name: 'Name', value: 'name' },
+            { name: 'Area', value: 'area_hectares' }
+          ]}
+          onClick={setSortCriteria}
+        />
+      )
+    }
+  ]
+
   const boroughs = viewCriteria === 'all' ?
     londonArea.features :
     londonArea.features.filter(v => window.localStorage.getItem('boroughs').includes(v.properties.name))
@@ -33,39 +63,18 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
   const body = (
     <div className='row p-1'>
       <div className='col-md-12'>
-
-        <div className='row mb-3 justify-content-center align-items-center'>
-          <div className='col-md-4'>
-            <span>View</span>
-          </div>
-          <div className='col-md-7'>
-            <RadioButtonGroup
-              initialValue='all'
-              radios={[
-                { name: 'All', value: 'all' },
-                { name: 'Favorites', value: 'favorites' }
-              ]}
-              onClick={changeViewClick}
-            />
-          </div>
-        </div>
-
-        <div className='row mb-3 justify-content-center align-items-center'>
-          <div className='col-md-4'>
-            <span>Sort ASC By</span>
-          </div>
-          <div className='col-md-7'>
-            <RadioButtonGroup
-              initialValue='id'
-              radios={[
-                { name: 'Id', value: 'id' },
-                { name: 'Name', value: 'name' },
-                { name: 'Area', value: 'area_hectares' }
-              ]}
-              onClick={setSortCriteria}
-            />
-          </div>
-        </div>
+        {
+          radioButtonGroups.map((v, i) => (
+            <div key={i} className='row mb-3 justify-content-center align-items-center'>
+              <div className='col-md-4'>
+                <span>{v.label}</span>
+              </div>
+              <div className='col-md-7'>
+                {v.radioButtonGroup}
+              </div>
+            </div>
+          ))
+        }
 
         {
           boroughs
