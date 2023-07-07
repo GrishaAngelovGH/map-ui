@@ -112,6 +112,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
       zoom={map.zoom.default}
       minZoom={map.zoom.min}
       maxZoom={map.zoom.max}
+      doubleClickZoom={false}
       className='react-leaflet-map'
     >
       <TileLayer url={map.url} />
