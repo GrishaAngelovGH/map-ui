@@ -1,7 +1,7 @@
 import { useContext, useRef, useState } from 'react'
 import { FeatureGroup, MapContainer, Polygon, TileLayer } from 'react-leaflet'
 
-import LocationsContext from '../../contexts/LocationsContext'
+import LocationsContext from 'contexts/LocationsContext'
 import CityArea from './CityArea'
 import Locations from './Locations'
 import MapButton from './MapButton'

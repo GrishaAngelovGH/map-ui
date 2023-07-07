@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import Header from './components/Header'
-import Layout from './components/Layout'
-import Map from './components/Map'
+import Header from 'components/Header'
+import Layout from 'components/Layout'
+import Map from 'components/Map'
 
 function App() {
   const [showLocations, setShowLocations] = useState(false)

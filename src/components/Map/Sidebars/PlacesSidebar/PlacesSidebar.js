@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react'
-import Sidebar from '../../../Sidebar'
+import Sidebar from 'components/Sidebar'
 import Place from './Place'
 import PlaceModal from './Place/PlaceModal'
 

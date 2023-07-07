@@ -1,7 +1,7 @@
 import L from 'leaflet'
 import { Marker, Polyline, useMap } from 'react-leaflet'
 import MarkerClusterGroup from 'react-leaflet-cluster'
-import MarkerIcon from '../MarkerIcon'
+import MarkerIcon from 'components/Map/MarkerIcon'
 
 const polyline = [
   [51.50917249679021, -0.12439680208002753],

@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { GeoJSON, useMap } from 'react-leaflet'
-import LondonAreaContext from '../../../contexts/LondonAreaContext'
+import LondonAreaContext from 'contexts/LondonAreaContext'
 
 const onEachFeature = (feature, layer) => {
   if (feature.properties) {

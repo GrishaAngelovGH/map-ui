@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react'
-import LondonAreaContext from '../../../../contexts/LondonAreaContext'
-import Sidebar from '../../../Sidebar'
+import LondonAreaContext from 'contexts/LondonAreaContext'
+import Sidebar from 'components/Sidebar'
 import Borough from './Borough'
 
 const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {

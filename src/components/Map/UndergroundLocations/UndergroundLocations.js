@@ -1,6 +1,6 @@
 import { Marker, Tooltip } from 'react-leaflet'
 import MarkerClusterGroup from 'react-leaflet-cluster'
-import MarkerIcon from '../MarkerIcon'
+import MarkerIcon from 'components/Map/MarkerIcon'
 import ldnUnderground from './london-underground.json'
 
 const UndergroundLocations = () => (

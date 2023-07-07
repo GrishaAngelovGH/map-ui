@@ -3,9 +3,9 @@ import { useContext } from 'react'
 import { Marker, useMap } from 'react-leaflet'
 import MarkerClusterGroup from 'react-leaflet-cluster'
 
-import LocationsContext from '../../../contexts/LocationsContext'
-import MarkerIcon from '../MarkerIcon'
-import Popup from '../Popup'
+import LocationsContext from 'contexts/LocationsContext'
+import MarkerIcon from 'components/Map/MarkerIcon'
+import Popup from 'components/Map/Popup'
 
 const Locations = () => {
   const locations = useContext(LocationsContext)
