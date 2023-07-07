@@ -132,6 +132,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -160,6 +165,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -190,6 +200,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -218,6 +233,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -248,6 +268,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -276,6 +301,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -306,6 +336,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -334,6 +369,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -364,6 +404,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -392,6 +437,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -422,6 +472,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -450,6 +505,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -480,6 +540,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -508,6 +573,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -538,6 +608,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -566,6 +641,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -596,6 +676,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -624,6 +709,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -654,6 +744,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -682,6 +777,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -712,6 +812,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -740,6 +845,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -770,6 +880,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -798,6 +913,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -828,6 +948,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -856,6 +981,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -886,6 +1016,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -914,6 +1049,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -944,6 +1084,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -972,6 +1117,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>
@@ -1002,6 +1152,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -1031,6 +1186,11 @@ Object {
                 >
                   View on Map
                 </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
+                </button>
               </div>
             </div>
             <div
@@ -1059,6 +1219,11 @@ Object {
                   class="btn btn-primary w-100"
                 >
                   View on Map
+                </button>
+                <button
+                  class="btn  btn-outline-warning w-100 mt-2"
+                >
+                  Save as Favorite
                 </button>
               </div>
             </div>

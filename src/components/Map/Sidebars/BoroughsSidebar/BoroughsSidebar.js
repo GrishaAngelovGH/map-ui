@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 
 import RadioButtonGroup from 'components/RadioButtonGroup'
 import Sidebar from 'components/Sidebar'
@@ -15,6 +15,11 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
     setBoroughId(id)
     onBoroughClick(coords)
   }
+
+  useEffect(() => {
+    const favoriteBoroughs = window.localStorage.getItem('boroughs')
+    if (!favoriteBoroughs) window.localStorage.setItem('boroughs', '')
+  }, [])
 
   const body = (
     <div className='row p-1'>
