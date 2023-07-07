@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render BoroughsSidebar component 1`] = `
+exports[`should render BoroughsSidebar component with all boroughs 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body
@@ -46,6 +46,57 @@ Object {
                 class="col-md-4"
               >
                 <span>
+                  View
+                </span>
+              </div>
+              <div
+                class="col-md-7"
+              >
+                <div
+                  class="btn-group"
+                  role="group"
+                >
+                  <input
+                    autocomplete="off"
+                    checked=""
+                    class="btn-check"
+                    id="radio-all"
+                    name="radio-all-name"
+                    type="radio"
+                    value="all"
+                  />
+                  <label
+                    class="btn btn-outline-primary"
+                    for="radio-all"
+                    tabindex="0"
+                  >
+                    All
+                  </label>
+                  <input
+                    autocomplete="off"
+                    class="btn-check"
+                    id="radio-favorites"
+                    name="radio-favorites-name"
+                    type="radio"
+                    value="favorites"
+                  />
+                  <label
+                    class="btn btn-outline-primary"
+                    for="radio-favorites"
+                    tabindex="0"
+                  >
+                    Favorites
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row mb-3 justify-content-center align-items-center"
+            >
+              <div
+                class="col-md-4"
+              >
+                <span>
                   Sort ASC By
                 </span>
               </div>
@@ -60,14 +111,14 @@ Object {
                     autocomplete="off"
                     checked=""
                     class="btn-check"
-                    id="radio-0"
-                    name="radio"
+                    id="radio-id"
+                    name="radio-id-name"
                     type="radio"
                     value="id"
                   />
                   <label
                     class="btn btn-outline-primary"
-                    for="radio-0"
+                    for="radio-id"
                     tabindex="0"
                   >
                     Id
@@ -75,14 +126,14 @@ Object {
                   <input
                     autocomplete="off"
                     class="btn-check"
-                    id="radio-1"
-                    name="radio"
+                    id="radio-name"
+                    name="radio-name-name"
                     type="radio"
                     value="name"
                   />
                   <label
                     class="btn btn-outline-primary"
-                    for="radio-1"
+                    for="radio-name"
                     tabindex="0"
                   >
                     Name
@@ -90,14 +141,14 @@ Object {
                   <input
                     autocomplete="off"
                     class="btn-check"
-                    id="radio-2"
-                    name="radio"
+                    id="radio-area_hectares"
+                    name="radio-area_hectares-name"
                     type="radio"
                     value="area_hectares"
                   />
                   <label
                     class="btn btn-outline-primary"
-                    for="radio-2"
+                    for="radio-area_hectares"
                     tabindex="0"
                   >
                     Area
@@ -1224,6 +1275,290 @@ Object {
                   class="btn  btn-outline-warning w-100 mt-2"
                 >
                   Save as Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`should render BoroughsSidebar component with favorite boroughs 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body
+    class="modal-open"
+    data-rr-ui-modal-open=""
+    style="padding-right: 2048px;"
+  >
+    <div />
+    <div
+      aria-modal="true"
+      class="offcanvas offcanvas-start offcanvas-toggling show"
+      role="dialog"
+      style="visibility: visible;"
+      tabindex="-1"
+    >
+      <div
+        class="offcanvas-header"
+      >
+        <div
+          class="offcanvas-title h5"
+        >
+          London Boroughs
+        </div>
+        <button
+          aria-label="Close"
+          class="btn-close"
+          type="button"
+        />
+      </div>
+      <div
+        class="offcanvas-body"
+      >
+        <div
+          class="row p-1"
+        >
+          <div
+            class="col-md-12"
+          >
+            <div
+              class="row mb-3 justify-content-center align-items-center"
+            >
+              <div
+                class="col-md-4"
+              >
+                <span>
+                  View
+                </span>
+              </div>
+              <div
+                class="col-md-7"
+              >
+                <div
+                  class="btn-group"
+                  role="group"
+                >
+                  <input
+                    autocomplete="off"
+                    checked=""
+                    class="btn-check"
+                    id="radio-all"
+                    name="radio-all-name"
+                    type="radio"
+                    value="all"
+                  />
+                  <label
+                    class="btn btn-outline-primary"
+                    for="radio-all"
+                    tabindex="0"
+                  >
+                    All
+                  </label>
+                  <input
+                    autocomplete="off"
+                    class="btn-check"
+                    id="radio-favorites"
+                    name="radio-favorites-name"
+                    type="radio"
+                    value="favorites"
+                  />
+                  <label
+                    class="btn btn-outline-primary"
+                    for="radio-favorites"
+                    tabindex="0"
+                  >
+                    Favorites
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row mb-3 justify-content-center align-items-center"
+            >
+              <div
+                class="col-md-4"
+              >
+                <span>
+                  Sort ASC By
+                </span>
+              </div>
+              <div
+                class="col-md-7"
+              >
+                <div
+                  class="btn-group"
+                  role="group"
+                >
+                  <input
+                    autocomplete="off"
+                    checked=""
+                    class="btn-check"
+                    id="radio-id"
+                    name="radio-id-name"
+                    type="radio"
+                    value="id"
+                  />
+                  <label
+                    class="btn btn-outline-primary"
+                    for="radio-id"
+                    tabindex="0"
+                  >
+                    Id
+                  </label>
+                  <input
+                    autocomplete="off"
+                    class="btn-check"
+                    id="radio-name"
+                    name="radio-name-name"
+                    type="radio"
+                    value="name"
+                  />
+                  <label
+                    class="btn btn-outline-primary"
+                    for="radio-name"
+                    tabindex="0"
+                  >
+                    Name
+                  </label>
+                  <input
+                    autocomplete="off"
+                    class="btn-check"
+                    id="radio-area_hectares"
+                    name="radio-area_hectares-name"
+                    type="radio"
+                    value="area_hectares"
+                  />
+                  <label
+                    class="btn btn-outline-primary"
+                    for="radio-area_hectares"
+                    tabindex="0"
+                  >
+                    Area
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row mb-3 border rounded bg-light p-2"
+            >
+              <div
+                class="col-md-12"
+              >
+                <h5
+                  class="fw-bold"
+                >
+                  #
+                  02
+                   
+                  Croydon
+                </h5>
+                <h5>
+                  Code: 
+                  E09000008
+                </h5>
+                <h5>
+                  Area Hectares: 
+                  8649.441
+                </h5>
+                <button
+                  class="btn btn-primary w-100"
+                >
+                  View on Map
+                </button>
+                <button
+                  class="btn  btn-warning w-100 mt-2"
+                >
+                  Remove from Favorites
+                </button>
+              </div>
+            </div>
+            <div
+              class="row mb-3 border rounded bg-light p-2"
+            >
+              <div
+                class="col-md-12"
+              >
+                <h5
+                  class="fw-bold"
+                >
+                  #
+                  25
+                   
+                  Westminster
+                </h5>
+                <h5>
+                  Code: 
+                  E09000033
+                </h5>
+                <h5>
+                  Area Hectares: 
+                  2203.005
+                </h5>
+                <button
+                  class="btn btn-primary w-100"
+                >
+                  View on Map
+                </button>
+                <button
+                  class="btn  btn-warning w-100 mt-2"
+                >
+                  Remove from Favorites
                 </button>
               </div>
             </div>

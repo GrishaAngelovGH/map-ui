@@ -16,10 +16,10 @@ const RadioButtonGroup = ({ initialValue, radios, onClick }) => {
         radios.map((radio, idx) => (
           <ToggleButton
             key={idx}
-            id={`radio-${idx}`}
+            id={`radio-${radio.value}`}
             type='radio'
             variant='outline-primary'
-            name='radio'
+            name={`radio-${radio.value}-name`}
             value={radio.value}
             checked={radioValue === radio.value}
             onChange={handleClick}
