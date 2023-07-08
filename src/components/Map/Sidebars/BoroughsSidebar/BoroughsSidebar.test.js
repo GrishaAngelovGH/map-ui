@@ -30,10 +30,9 @@ test('should render BoroughsSidebar component with favorite boroughs', async () 
   const view = render(<BoroughsSidebar showSidebar />)
 
   await waitFor(() => {
-    const favoritesButton = screen.getByText('Favorites')
+    const favoritesButton = screen.getByText('Favorites (2)')
 
     fireEvent.click(favoritesButton, { currentTarget: { value: 'favorites' } })
-
   })
 
   expect(view).toMatchSnapshot()

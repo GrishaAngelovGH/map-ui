@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 
-const Borough = ({ id, active, name, code, areaHectares, coordinates, onViewOnMapClick }) => {
+const Borough = ({
+  id, active, name, code, areaHectares, coordinates,
+  onViewOnMapClick, onFavoriteChange
+}) => {
   const [isFavorite, setIsFavorite] = useState(false)
 
   const handleViewOnMapClick = () => {
@@ -17,6 +20,7 @@ const Borough = ({ id, active, name, code, areaHectares, coordinates, onViewOnMa
     }
 
     setIsFavorite(true)
+    onFavoriteChange()
   }
 
   const handleRemoveFromFavoritesClick = () => {
@@ -24,6 +28,7 @@ const Borough = ({ id, active, name, code, areaHectares, coordinates, onViewOnMa
     const newFavoriteBoroughs = favoriteBoroughs.filter(v => v !== name)
     window.localStorage.setItem('boroughs', newFavoriteBoroughs)
     setIsFavorite(false)
+    onFavoriteChange()
   }
 
   useEffect(() => {

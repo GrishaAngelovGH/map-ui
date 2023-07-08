@@ -10,6 +10,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
   const [viewCriteria, setViewCriteria] = useState('all')
   const [sortCriteria, setSortCriteria] = useState('id')
   const [boroughId, setBoroughId] = useState(0)
+  const [favoritesCount, setFavoritesCount] = useState(0)
   const londonArea = useContext(LondonAreaContext)
 
   const handleViewOnMapClick = (id, coords) => {
@@ -21,9 +22,16 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
     setViewCriteria(criteria)
   }
 
+  const countFavorites = () => {
+    const favoriteBoroughs = window.localStorage.getItem('boroughs')
+    setFavoritesCount(favoriteBoroughs.split(',').length - 1)
+  }
+
   useEffect(() => {
     const favoriteBoroughs = window.localStorage.getItem('boroughs')
     if (!favoriteBoroughs) window.localStorage.setItem('boroughs', '')
+
+    countFavorites()
   }, [])
 
   const radioButtonGroups = [
@@ -34,7 +42,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
           initialValue='all'
           radios={[
             { name: 'All', value: 'all' },
-            { name: 'Favorites', value: 'favorites' }
+            { name: `Favorites (${favoritesCount})`, value: 'favorites' }
           ]}
           onClick={changeViewClick}
         />
@@ -96,6 +104,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
                   areaHectares={v.properties.area_hectares}
                   coordinates={v.geometry.coordinates[0][0]}
                   onViewOnMapClick={handleViewOnMapClick}
+                  onFavoriteChange={countFavorites}
                 />
               )
             })

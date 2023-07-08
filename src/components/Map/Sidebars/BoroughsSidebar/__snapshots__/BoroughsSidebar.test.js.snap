@@ -85,7 +85,7 @@ Object {
                     for="radio-favorites"
                     tabindex="0"
                   >
-                    Favorites
+                    Favorites (0)
                   </label>
                 </div>
               </div>
@@ -1423,7 +1423,7 @@ Object {
                     for="radio-favorites"
                     tabindex="0"
                   >
-                    Favorites
+                    Favorites (2)
                   </label>
                 </div>
               </div>
