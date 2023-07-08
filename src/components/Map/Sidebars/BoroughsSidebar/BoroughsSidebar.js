@@ -12,7 +12,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
   const [boroughId, setBoroughId] = useState(0)
   const londonArea = useContext(LondonAreaContext)
 
-  const handleBoroughClick = (id, coords) => {
+  const handleViewOnMapClick = (id, coords) => {
     setBoroughId(id)
     onBoroughClick(coords)
   }
@@ -95,7 +95,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
                   code={v.properties.code}
                   areaHectares={v.properties.area_hectares}
                   coordinates={v.geometry.coordinates[0][0]}
-                  onClick={handleBoroughClick}
+                  onViewOnMapClick={handleViewOnMapClick}
                 />
               )
             })

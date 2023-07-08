@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 
-const Borough = ({ id, active, name, code, areaHectares, coordinates, onClick }) => {
+const Borough = ({ id, active, name, code, areaHectares, coordinates, onViewOnMapClick }) => {
   const [isFavorite, setIsFavorite] = useState(false)
 
   const handleViewOnMapClick = () => {
     const coords = coordinates.map(([lng, lat]) => [lat, lng])
 
-    onClick(id, coords)
+    onViewOnMapClick(id, coords)
   }
 
   const handleAddToFavoritesClick = () => {
