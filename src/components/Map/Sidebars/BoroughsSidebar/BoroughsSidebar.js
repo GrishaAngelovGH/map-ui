@@ -22,9 +22,18 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
     setViewCriteria(criteria)
   }
 
+  const handleClearFavoritesClick = () => {
+    window.localStorage.setItem('boroughs', '')
+    countFavorites()
+  }
+
   const countFavorites = () => {
     const favoriteBoroughs = window.localStorage.getItem('boroughs')
     setFavoritesCount(favoriteBoroughs.split(',').length - 1)
+  }
+
+  const isFavorite = name => {
+    return window.localStorage.getItem('boroughs').includes(name)
   }
 
   useEffect(() => {
@@ -85,6 +94,18 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
         }
 
         {
+          favoritesCount > 0 && (
+            <button
+              className='btn btn-danger w-100 mb-3 d-flex justify-content-center align-items-center'
+              onClick={handleClearFavoritesClick}
+            >
+              <span className='mx-2'>Clear Favorites</span>
+              <i className='bi bi-trash3 fs-4'></i>
+            </button>
+          )
+        }
+
+        {
           boroughs
             .sort((a, b) => {
               if (a.properties[sortCriteria] > b.properties[sortCriteria]) return 1
@@ -103,6 +124,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
                   code={v.properties.code}
                   areaHectares={v.properties.area_hectares}
                   coordinates={v.geometry.coordinates[0][0]}
+                  isFavorite={isFavorite(v.properties.name)}
                   onViewOnMapClick={handleViewOnMapClick}
                   onFavoriteChange={countFavorites}
                 />

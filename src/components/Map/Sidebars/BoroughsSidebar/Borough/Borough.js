@@ -1,11 +1,7 @@
-import { useEffect, useState } from 'react'
-
 const Borough = ({
-  id, active, name, code, areaHectares, coordinates,
+  id, active, name, code, areaHectares, coordinates, isFavorite,
   onViewOnMapClick, onFavoriteChange
 }) => {
-  const [isFavorite, setIsFavorite] = useState(false)
-
   const handleViewOnMapClick = () => {
     const coords = coordinates.map(([lng, lat]) => [lat, lng])
 
@@ -19,7 +15,6 @@ const Borough = ({
       window.localStorage.setItem('boroughs', `${favoriteBoroughs}${name},`)
     }
 
-    setIsFavorite(true)
     onFavoriteChange()
   }
 
@@ -27,17 +22,8 @@ const Borough = ({
     const favoriteBoroughs = window.localStorage.getItem('boroughs').split(',')
     const newFavoriteBoroughs = favoriteBoroughs.filter(v => v !== name)
     window.localStorage.setItem('boroughs', newFavoriteBoroughs)
-    setIsFavorite(false)
     onFavoriteChange()
   }
-
-  useEffect(() => {
-    const favoriteBoroughs = window.localStorage.getItem('boroughs')
-
-    if (favoriteBoroughs.includes(name)) {
-      setIsFavorite(true)
-    }
-  }, [])
 
   return (
     <div className={`row mb-3 ${active ? 'border border-1 border-primary' : 'border'} rounded bg-light p-2`}>

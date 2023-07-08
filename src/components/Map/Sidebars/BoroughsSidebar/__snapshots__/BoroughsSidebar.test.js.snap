@@ -1494,6 +1494,18 @@ Object {
                 </div>
               </div>
             </div>
+            <button
+              class="btn btn-danger w-100 mb-3 d-flex justify-content-center align-items-center"
+            >
+              <span
+                class="mx-2"
+              >
+                Clear Favorites
+              </span>
+              <i
+                class="bi bi-trash3 fs-4"
+              />
+            </button>
             <div
               class="row mb-3 border rounded bg-light p-2"
             >

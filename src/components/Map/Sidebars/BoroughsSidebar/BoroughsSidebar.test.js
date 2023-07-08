@@ -19,6 +19,8 @@ const localStorageMock = (function () {
 Object.defineProperty(window, 'localStorage', { value: localStorageMock })
 
 test('should render BoroughsSidebar component with all boroughs', () => {
+  localStorageMock.setItem('boroughs', '')
+
   const view = render(<BoroughsSidebar showSidebar />)
 
   expect(view).toMatchSnapshot()
