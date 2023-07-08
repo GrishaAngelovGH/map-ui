@@ -1,3 +1,5 @@
+import persistentBoroughsStorage from 'components/Map/Sidebars/BoroughsSidebar/persistentBoroughsStorage'
+
 const Borough = ({
   id, active, name, code, areaHectares, coordinates, isFavorite,
   onViewOnMapClick, onFavoriteChange
@@ -9,19 +11,13 @@ const Borough = ({
   }
 
   const handleAddToFavoritesClick = () => {
-    const favoriteBoroughs = window.localStorage.getItem('boroughs')
-
-    if (!favoriteBoroughs.includes(name)) {
-      window.localStorage.setItem('boroughs', `${favoriteBoroughs}${name},`)
-    }
+    persistentBoroughsStorage.addToFavorites(name)
 
     onFavoriteChange()
   }
 
   const handleRemoveFromFavoritesClick = () => {
-    const favoriteBoroughs = window.localStorage.getItem('boroughs').split(',')
-    const newFavoriteBoroughs = favoriteBoroughs.filter(v => v !== name)
-    window.localStorage.setItem('boroughs', newFavoriteBoroughs)
+    persistentBoroughsStorage.removeFromFavorites(name)
     onFavoriteChange()
   }
 

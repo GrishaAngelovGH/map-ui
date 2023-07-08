@@ -6,6 +6,8 @@ import Borough from './Borough'
 
 import LondonAreaContext from 'contexts/LondonAreaContext'
 
+import persistentBoroughsStorage from './persistentBoroughsStorage'
+
 const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
   const [viewCriteria, setViewCriteria] = useState('all')
   const [sortCriteria, setSortCriteria] = useState('id')
@@ -23,23 +25,16 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
   }
 
   const handleClearFavoritesClick = () => {
-    window.localStorage.setItem('boroughs', '')
+    persistentBoroughsStorage.clearBoroughs()
     countFavorites()
   }
 
   const countFavorites = () => {
-    const favoriteBoroughs = window.localStorage.getItem('boroughs')
-    setFavoritesCount(favoriteBoroughs.split(',').length - 1)
-  }
-
-  const isFavorite = name => {
-    return window.localStorage.getItem('boroughs').includes(name)
+    setFavoritesCount(persistentBoroughsStorage.getFavoritesCount())
   }
 
   useEffect(() => {
-    const favoriteBoroughs = window.localStorage.getItem('boroughs')
-    if (!favoriteBoroughs) window.localStorage.setItem('boroughs', '')
-
+    persistentBoroughsStorage.init()
     countFavorites()
   }, [])
 
@@ -75,7 +70,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
 
   const boroughs = viewCriteria === 'all' ?
     londonArea.features :
-    londonArea.features.filter(v => window.localStorage.getItem('boroughs').includes(v.properties.name))
+    londonArea.features.filter(v => persistentBoroughsStorage.isFavorite(v.properties.name))
 
   const body = (
     <div className='row p-1'>
@@ -124,7 +119,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
                   code={v.properties.code}
                   areaHectares={v.properties.area_hectares}
                   coordinates={v.geometry.coordinates[0][0]}
-                  isFavorite={isFavorite(v.properties.name)}
+                  isFavorite={persistentBoroughsStorage.isFavorite(v.properties.name)}
                   onViewOnMapClick={handleViewOnMapClick}
                   onFavoriteChange={countFavorites}
                 />
