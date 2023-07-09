@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="position-relative"
+        class="d-flex position-relative"
       >
         <i
           class="bi bi-search text-secondary fs-4 ps-2 position-absolute"
@@ -16,12 +16,16 @@ Object {
           placeholder="Search"
           value=""
         />
+        <i
+          class="bi bi-backspace text-secondary fs-4 ps-2"
+          role="button"
+        />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="position-relative"
+      class="d-flex position-relative"
     >
       <i
         class="bi bi-search text-secondary fs-4 ps-2 position-absolute"
@@ -30,6 +34,10 @@ Object {
         class="mb-3 ps-5 form-control"
         placeholder="Search"
         value=""
+      />
+      <i
+        class="bi bi-backspace text-secondary fs-4 ps-2"
+        role="button"
       />
     </div>
   </div>,

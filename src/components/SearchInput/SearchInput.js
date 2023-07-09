@@ -9,8 +9,13 @@ const SearchInput = ({ placeholder, onChange }) => {
     onChange(target.value)
   }
 
+  const handleClearInput = () => {
+    setValue('')
+    onChange('')
+  }
+
   return (
-    <div className='position-relative'>
+    <div className='d-flex position-relative'>
       <i className='bi bi-search text-secondary fs-4 ps-2 position-absolute'></i>
       <FormControl
         value={value}
@@ -18,6 +23,7 @@ const SearchInput = ({ placeholder, onChange }) => {
         className='mb-3 ps-5'
         onChange={handleInputChange}
       />
+      <i role='button' className='bi bi-backspace text-secondary fs-4 ps-2' onClick={handleClearInput}></i>
     </div>
   )
 }
