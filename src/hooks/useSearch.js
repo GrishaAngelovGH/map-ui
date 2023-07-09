@@ -12,7 +12,7 @@ const useSearch = (searchCriteria, items, path) => {
     })
 
     setFoundItems(filteredItems)
-  }, [searchCriteria])
+  }, [searchCriteria, items.length])
 
   return [foundItems, foundItems.length]
 }

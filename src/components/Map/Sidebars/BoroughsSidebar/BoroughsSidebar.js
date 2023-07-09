@@ -29,10 +29,6 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
     onBoroughClick(coords)
   }
 
-  const changeViewClick = criteria => {
-    setViewCriteria(criteria)
-  }
-
   const handleClearFavoritesClick = () => {
     persistentBoroughsStorage.clearBoroughs()
     countFavorites()
@@ -57,7 +53,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
             { name: 'All', value: 'all' },
             { name: `Favorites (${favoritesCount})`, value: 'favorites' }
           ]}
-          onClick={changeViewClick}
+          onClick={setViewCriteria}
         />
       )
     },
