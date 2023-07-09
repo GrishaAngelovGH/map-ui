@@ -1,19 +1,28 @@
 import { useContext, useEffect, useState } from 'react'
 
 import RadioButtonGroup from 'components/RadioButtonGroup'
+import SearchInput from 'components/SearchInput'
 import Sidebar from 'components/Sidebar'
 import Borough from './Borough'
 
 import LondonAreaContext from 'contexts/LondonAreaContext'
+import useSearch from 'hooks/useSearch'
 
 import persistentBoroughsStorage from './persistentBoroughsStorage'
 
 const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
   const [viewCriteria, setViewCriteria] = useState('all')
   const [sortCriteria, setSortCriteria] = useState('id')
+  const [searchCriteria, setSearchCriteria] = useState('')
   const [boroughId, setBoroughId] = useState(0)
   const [favoritesCount, setFavoritesCount] = useState(0)
   const londonArea = useContext(LondonAreaContext)
+
+  const allBoroughs = viewCriteria === 'all' ?
+    londonArea.features :
+    londonArea.features.filter(v => persistentBoroughsStorage.isFavorite(v.properties.name))
+
+  const [boroughs, boroughsCount] = useSearch(searchCriteria, allBoroughs, 'properties.name')
 
   const handleViewOnMapClick = (id, coords) => {
     setBoroughId(id)
@@ -68,13 +77,11 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
     }
   ]
 
-  const boroughs = viewCriteria === 'all' ?
-    londonArea.features :
-    londonArea.features.filter(v => persistentBoroughsStorage.isFavorite(v.properties.name))
-
   const body = (
     <div className='row p-1'>
       <div className='col-md-12'>
+        <SearchInput placeholder='Search by name' onChange={setSearchCriteria} />
+
         {
           radioButtonGroups.map((v, i) => (
             <div key={i} className='row mb-3 justify-content-center align-items-center'>
@@ -132,7 +139,7 @@ const BoroughsSidebar = ({ showSidebar, onHide, onBoroughClick }) => {
 
   return (
     <Sidebar
-      title='London Boroughs'
+      title={<h3>London Boroughs ({boroughsCount})</h3>}
       body={body}
       showSidebar={showSidebar}
       onHide={onHide}
