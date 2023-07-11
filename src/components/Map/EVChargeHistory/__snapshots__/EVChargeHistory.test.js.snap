@@ -48,7 +48,54 @@ Object {
           </div>
           <div
             class="modal-body"
-          />
+          >
+            <div
+              class="row justify-content-center text-center"
+            >
+              <div
+                class="col-md-3"
+              >
+                <p
+                  class="m-0 text-secondary"
+                >
+                  Distance
+                </p>
+                <p
+                  class="fw-bold"
+                >
+                  223 km
+                </p>
+              </div>
+              <div
+                class="col-md-4"
+              >
+                <p
+                  class="m-0 text-secondary"
+                >
+                  Total Duration
+                </p>
+                <p
+                  class="fw-bold"
+                >
+                  4h 52m
+                </p>
+              </div>
+              <div
+                class="col-md-3"
+              >
+                <p
+                  class="m-0 text-secondary"
+                >
+                  Charge
+                </p>
+                <p
+                  class="fw-bold"
+                >
+                  56m
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import Modal from 'react-bootstrap/Modal'
+import Summary from './Summary'
 
 const EVChargeHistory = ({ show, onHide }) => {
   return (
@@ -10,6 +11,7 @@ const EVChargeHistory = ({ show, onHide }) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        <Summary />
       </Modal.Body>
     </Modal>
   )
