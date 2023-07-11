@@ -201,6 +201,22 @@ Object {
           >
             <button
               class="btn btn-light"
+              title="EV Charge History"
+            >
+              <i
+                class="bi bi-ev-station"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="leaflet-right"
+        >
+          <div
+            class="leaflet-control mt-2"
+          >
+            <button
+              class="btn btn-light"
               title="Clear Map"
             >
               <i
@@ -412,6 +428,22 @@ Object {
           >
             <i
               class="bi bi-hexagon"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="leaflet-right"
+      >
+        <div
+          class="leaflet-control mt-2"
+        >
+          <button
+            class="btn btn-light"
+            title="EV Charge History"
+          >
+            <i
+              class="bi bi-ev-station"
             />
           </button>
         </div>

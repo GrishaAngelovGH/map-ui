@@ -3,6 +3,7 @@ import { FeatureGroup, MapContainer, Polygon, TileLayer } from 'react-leaflet'
 
 import LocationsContext from 'contexts/LocationsContext'
 import CityArea from './CityArea'
+import EVChargeHistory from './EVChargeHistory'
 import Locations from './Locations'
 import MapButton from './MapButton'
 import MapMenu from './MapMenu'
@@ -34,6 +35,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showPlacesSidebar, setShowPlacesSidebar] = useState(false)
   const [showBoroughsSidebar, setShowBoroughsSidebar] = useState(false)
   const [showUndergroundLocations, setShowUndergroundLocations] = useState(false)
+  const [showEVChargeHistory, setShowEVChargeHistory] = useState(false)
   const [boroughCoordinates, setBoroughCoordinates] = useState([])
 
   const featureGroupRef = useRef()
@@ -52,6 +54,10 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
   const handleShowBoroughsSidebar = () => {
     handleClearMap()
     setShowBoroughsSidebar(!showBoroughsSidebar)
+  }
+
+  const handleShowEVChargeHistory = () => {
+    setShowEVChargeHistory(!showEVChargeHistory)
   }
 
   const handlePlayRoute = () => {
@@ -103,6 +109,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
     { icon: 'layout-text-sidebar-reverse', title: 'Traffic Report', onClick: handleShowTrafficReport },
     { icon: 'play-circle', title: 'Play Route', onClick: handlePlayRoute },
     { icon: 'hexagon', title: 'City Area', onClick: handleShowCityArea },
+    { icon: 'ev-station', title: 'EV Charge History', onClick: handleShowEVChargeHistory },
     { icon: 'backspace', title: 'Clear Map', onClick: handleClearMap }
   ]
 
@@ -171,6 +178,8 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         {showCityArea && <CityArea />}
 
         {showUndergroundLocations && <UndergroundLocations />}
+
+        {showEVChargeHistory && <EVChargeHistory show={showEVChargeHistory} onHide={setShowEVChargeHistory} />}
 
         {
           boroughCoordinates.length > 0 && (
