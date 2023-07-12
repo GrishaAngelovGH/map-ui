@@ -4,6 +4,7 @@ import { FeatureGroup, MapContainer, Polygon, TileLayer } from 'react-leaflet'
 import LocationsContext from 'contexts/LocationsContext'
 import CityArea from './CityArea'
 import EVChargeHistory from './EVChargeHistory'
+import EVStations from './EVStations'
 import Locations from './Locations'
 import MapButton from './MapButton'
 import MapMenu from './MapMenu'
@@ -36,6 +37,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showBoroughsSidebar, setShowBoroughsSidebar] = useState(false)
   const [showUndergroundLocations, setShowUndergroundLocations] = useState(false)
   const [showEVChargeHistory, setShowEVChargeHistory] = useState(false)
+  const [showEVStations, setShowEVStations] = useState(false)
   const [boroughCoordinates, setBoroughCoordinates] = useState([])
 
   const featureGroupRef = useRef()
@@ -58,6 +60,10 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
 
   const handleShowEVChargeHistory = () => {
     setShowEVChargeHistory(!showEVChargeHistory)
+  }
+
+  const handleShowEVStations = () => {
+    setShowEVStations(!showEVStations)
   }
 
   const handlePlayRoute = () => {
@@ -127,6 +133,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
       <MapMenu
         onShowUndergroundLocations={handleShowUndergroundLocations}
         onShowBoroughs={handleShowBoroughsSidebar}
+        onShowEVStations={handleShowEVStations}
       />
 
       {
@@ -180,6 +187,8 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         {showUndergroundLocations && <UndergroundLocations />}
 
         {showEVChargeHistory && <EVChargeHistory show={showEVChargeHistory} onHide={setShowEVChargeHistory} />}
+
+        {showEVStations && <EVStations show={showEVStations} onHide={handleShowEVStations} />}
 
         {
           boroughCoordinates.length > 0 && (

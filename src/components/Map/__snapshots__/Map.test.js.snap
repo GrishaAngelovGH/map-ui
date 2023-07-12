@@ -142,6 +142,17 @@ Object {
                   width="40"
                 />
               </button>
+              <button
+                class="btn btn-outline-success"
+                title="EV Stations"
+                type="button"
+              >
+                <img
+                  class=""
+                  src="charging-station.png"
+                  width="40"
+                />
+              </button>
             </div>
           </div>
         </div>
@@ -378,6 +389,17 @@ Object {
               <img
                 class=""
                 src="map.png"
+                width="40"
+              />
+            </button>
+            <button
+              class="btn btn-outline-success"
+              title="EV Stations"
+              type="button"
+            >
+              <img
+                class=""
+                src="charging-station.png"
                 width="40"
               />
             </button>
