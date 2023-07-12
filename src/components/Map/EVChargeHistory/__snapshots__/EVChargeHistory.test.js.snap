@@ -214,9 +214,247 @@ Object {
                   <span
                     class="fw-bold mx-2"
                   >
-                    80
+                    70
                     %
                   </span>
+                </div>
+              </div>
+              <div
+                class="row mb-4 justify-content-evenly align-items-center border rounded p-4 shadow"
+              >
+                <div
+                  class="col-md-12"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-md-2"
+                    >
+                      <i
+                        class="bi bi-lightning-charge fs-1"
+                      />
+                    </div>
+                    <div
+                      class="col-md-7"
+                    >
+                      <p
+                        class="m-0 fw-bold"
+                      >
+                        ChargePoint - 123 Road
+                      </p>
+                      <p
+                        class="m-0 text-secondary"
+                      >
+                        A12 B34 London, UK
+                      </p>
+                    </div>
+                    <div
+                      class="col-md-3 d-flex align-items-center"
+                    >
+                      <i
+                        class="bi bi-clock fs-2"
+                      />
+                      <span
+                        class="fw-bold mx-1"
+                      >
+                        35
+                        m
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="row justify-content-center"
+                  >
+                    <div
+                      class="col-md-4 d-flex align-items-center"
+                    >
+                      <i
+                        class="bi bi-battery-half text-danger fs-1"
+                      />
+                      <span
+                        class="fw-bold text-danger mx-1"
+                      >
+                        70
+                        %
+                      </span>
+                      <i
+                        class="bi bi-arrow-right-short fs-1"
+                      />
+                    </div>
+                    <div
+                      class="col-md-4 d-flex align-items-center"
+                    >
+                      <i
+                        class="bi bi-battery-half text-success fs-1"
+                      />
+                      <span
+                        class="fw-bold text-success mx-1"
+                      >
+                        85
+                        %
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row mb-4 justify-content-evenly align-items-center border rounded p-4 shadow"
+              >
+                <div
+                  class="col-md-2"
+                >
+                  <i
+                    class="bi bi-car-front fs-1"
+                  />
+                </div>
+                <div
+                  class="col-md-7"
+                >
+                  <p
+                    class="m-0 fw-bold"
+                  >
+                    London
+                  </p>
+                  <p
+                    class="m-0 text-secondary"
+                  >
+                    London
+                    , 
+                    England, UK
+                  </p>
+                </div>
+                <div
+                  class="col-md-3 d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-battery-half fs-1"
+                  />
+                  <span
+                    class="fw-bold mx-2"
+                  >
+                    65
+                    %
+                  </span>
+                </div>
+              </div>
+              <div
+                class="row mb-4 justify-content-evenly align-items-center border rounded p-4 shadow"
+              >
+                <div
+                  class="col-md-2"
+                >
+                  <i
+                    class="bi bi-car-front fs-1"
+                  />
+                </div>
+                <div
+                  class="col-md-7"
+                >
+                  <p
+                    class="m-0 fw-bold"
+                  >
+                    London
+                  </p>
+                  <p
+                    class="m-0 text-secondary"
+                  >
+                    London
+                    , 
+                    England, UK
+                  </p>
+                </div>
+                <div
+                  class="col-md-3 d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-battery-half fs-1"
+                  />
+                  <span
+                    class="fw-bold mx-2"
+                  >
+                    60
+                    %
+                  </span>
+                </div>
+              </div>
+              <div
+                class="row mb-4 justify-content-evenly align-items-center border rounded p-4 shadow"
+              >
+                <div
+                  class="col-md-12"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-md-2"
+                    >
+                      <i
+                        class="bi bi-lightning-charge fs-1"
+                      />
+                    </div>
+                    <div
+                      class="col-md-7"
+                    >
+                      <p
+                        class="m-0 fw-bold"
+                      >
+                        ChargePoint - 123 Road
+                      </p>
+                      <p
+                        class="m-0 text-secondary"
+                      >
+                        A12 B34 London, UK
+                      </p>
+                    </div>
+                    <div
+                      class="col-md-3 d-flex align-items-center"
+                    >
+                      <i
+                        class="bi bi-clock fs-2"
+                      />
+                      <span
+                        class="fw-bold mx-1"
+                      >
+                        75
+                        m
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="row justify-content-center"
+                  >
+                    <div
+                      class="col-md-4 d-flex align-items-center"
+                    >
+                      <i
+                        class="bi bi-battery-half text-danger fs-1"
+                      />
+                      <span
+                        class="fw-bold text-danger mx-1"
+                      >
+                        60
+                        %
+                      </span>
+                      <i
+                        class="bi bi-arrow-right-short fs-1"
+                      />
+                    </div>
+                    <div
+                      class="col-md-4 d-flex align-items-center"
+                    >
+                      <i
+                        class="bi bi-battery-half text-success fs-1"
+                      />
+                      <span
+                        class="fw-bold text-success mx-1"
+                      >
+                        95
+                        %
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
