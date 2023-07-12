@@ -23,7 +23,7 @@ const EVChargeHistory = ({ show, onHide }) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className='overflow-auto' style={{ height: 500 }}>
-        <Summary />
+        <Summary history={history} />
 
         <div className='p-3'>
           {

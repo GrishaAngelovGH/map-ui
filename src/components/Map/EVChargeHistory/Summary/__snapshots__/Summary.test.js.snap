@@ -19,7 +19,8 @@ Object {
           <p
             class="fw-bold"
           >
-            223 km
+            44
+             km
           </p>
         </div>
         <div
@@ -33,7 +34,7 @@ Object {
           <p
             class="fw-bold"
           >
-            4h 52m
+            0 h : 58 min
           </p>
         </div>
         <div
@@ -47,7 +48,7 @@ Object {
           <p
             class="fw-bold"
           >
-            56m
+            0 h : 35 min
           </p>
         </div>
       </div>
@@ -68,7 +69,8 @@ Object {
         <p
           class="fw-bold"
         >
-          223 km
+          44
+           km
         </p>
       </div>
       <div
@@ -82,7 +84,7 @@ Object {
         <p
           class="fw-bold"
         >
-          4h 52m
+          0 h : 58 min
         </p>
       </div>
       <div
@@ -96,7 +98,7 @@ Object {
         <p
           class="fw-bold"
         >
-          56m
+          0 h : 35 min
         </p>
       </div>
     </div>
