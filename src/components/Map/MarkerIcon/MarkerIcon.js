@@ -1,9 +1,9 @@
 import L from 'leaflet'
-import locationIcon from './location-pin.png'
-import startFlagIcon from './start-flag.png'
-import finishFlagIcon from './finish-flag.png'
-import suvIcon from './suv.png'
-import ldnUndergroundIcon from './ldn-underground.png'
+import locationIcon from 'images/map/marker-icons/location-pin.png'
+import startFlagIcon from 'images/map/marker-icons/start-flag.png'
+import finishFlagIcon from 'images/map/marker-icons/finish-flag.png'
+import suvIcon from 'images/map/marker-icons/suv.png'
+import ldnUndergroundIcon from 'images/map/marker-icons/ldn-underground.png'
 
 const types = {
   location: locationIcon,

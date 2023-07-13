@@ -1,9 +1,9 @@
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
-import ldnUndergroundIcon from './ldn-underground.png'
-import mapIcon from './map.png'
-import chargingStationIcon from './charging-station.png'
+import ldnUndergroundIcon from 'images/map/map-menu/button-group/ldn-underground.png'
+import mapIcon from 'images/map/map-menu//button-group/map.png'
+import chargingStationIcon from 'images/map/map-menu//button-group/charging-station.png'
 
 const ButtonGroupWrapper = ({ onShowUndergroundLocations, onShowBoroughs, onShowEVStations }) => (
   <ButtonGroup>

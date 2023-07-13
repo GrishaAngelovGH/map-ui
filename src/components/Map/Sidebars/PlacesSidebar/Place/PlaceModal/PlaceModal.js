@@ -1,6 +1,6 @@
 import Image from 'react-bootstrap/Image'
 import Modal from 'react-bootstrap/Modal'
-import placeImg from './place.jpg'
+import placeImg from 'images/map/sidebars/places-sidebar/place/place-modal/place.jpg'
 
 const PlaceModal = ({ show, onHide, place }) => (
   <Modal show={show} backdrop={false} onHide={onHide}>

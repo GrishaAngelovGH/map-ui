@@ -3,7 +3,7 @@ import Image from 'react-bootstrap/Image'
 import { Popup } from 'react-leaflet'
 import './Popup.scss'
 
-import londonImg from './london.jpg'
+import londonImg from 'images/map/popup/london.jpg'
 
 const CoordinatesRow = () => (
   <div className='row text-center'>
