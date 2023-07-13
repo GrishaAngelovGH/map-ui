@@ -8,7 +8,6 @@ import EVStations from './EVStations'
 import Locations from './Locations'
 import MapButton from './MapButton'
 import MapMenu from './MapMenu'
-import MarkerIcon from './MarkerIcon'
 import SidebarMapButton from './SidebarMapButton'
 import BoroughsSidebar from './Sidebars/BoroughsSidebar'
 import PlacesSidebar from './Sidebars/PlacesSidebar'
@@ -19,16 +18,7 @@ import VehicleRoute from './VehicleRoute'
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
 
-const map = {
-  lat: 51.505,
-  lng: -0.09,
-  zoom: {
-    default: 13,
-    min: 10,
-    max: 16
-  },
-  url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-}
+import { map, motionPolylineConf } from './mapConfig'
 
 const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showTrafficReport, setTrafficReport] = useState(false)
@@ -73,19 +63,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
 
     featureGroupRef.current._map.fitBounds(L.polyline(locations).getBounds())
 
-    motionRef.current = L.motion.polyline(locations, {
-      color: 'lime',
-      weight: 10
-    }, {
-      auto: true,
-      duration: 15000,
-      speed: 5,
-      easing: L.Motion.Ease.linear
-    }, {
-      removeOnEnd: false,
-      showMarker: true,
-      icon: MarkerIcon('suv')
-    }).addTo(featureGroupRef.current._map)
+    motionRef.current = motionPolylineConf(locations).addTo(featureGroupRef.current._map)
   }
 
   const handleShowCityArea = () => {
