@@ -6,57 +6,36 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="row mb-4 justify-content-evenly align-items-center border rounded p-4 shadow"
+        class="row mb-4 justify-content-evenly align-items-center border rounded p-2 shadow"
       >
         <div
-          class="col-md-12"
+          class="col-md-2"
         >
+          <i
+            class="bi bi-lightning-charge fs-1"
+          />
+        </div>
+        <div
+          class="col-md-6"
+        >
+          <p
+            class="m-0 mt-3 fw-bold"
+          >
+            ChargePoint - 123 Road
+          </p>
+          <p
+            class="m-0 text-secondary"
+          >
+            A12 B34 London, UK
+          </p>
           <div
-            class="row"
+            class="d-flex"
           >
             <div
-              class="col-md-2"
+              class="w-50 d-flex align-items-center"
             >
               <i
-                class="bi bi-lightning-charge fs-1"
-              />
-            </div>
-            <div
-              class="col-md-7"
-            >
-              <p
-                class="m-0 fw-bold"
-              >
-                ChargePoint - 123 Road
-              </p>
-              <p
-                class="m-0 text-secondary"
-              >
-                A12 B34 London, UK
-              </p>
-            </div>
-            <div
-              class="col-md-3 d-flex align-items-center"
-            >
-              <i
-                class="bi bi-clock fs-2"
-              />
-              <span
-                class="fw-bold mx-1"
-              >
-                35
-                m
-              </span>
-            </div>
-          </div>
-          <div
-            class="row justify-content-center"
-          >
-            <div
-              class="col-md-4 d-flex align-items-center"
-            >
-              <i
-                class="bi bi-battery-half text-danger fs-1"
+                class="bi bi-battery-half text-danger fs-2 d-flex"
               />
               <span
                 class="fw-bold text-danger mx-1"
@@ -64,15 +43,12 @@ Object {
                 70
                 %
               </span>
-              <i
-                class="bi bi-arrow-right-short fs-1"
-              />
             </div>
             <div
-              class="col-md-4 d-flex align-items-center"
+              class="w-50 d-flex align-items-center"
             >
               <i
-                class="bi bi-battery-half text-success fs-1"
+                class="bi bi-battery-half text-success fs-2 d-flex"
               />
               <span
                 class="fw-bold text-success mx-1"
@@ -83,62 +59,54 @@ Object {
             </div>
           </div>
         </div>
+        <div
+          class="col-md-3 d-flex align-items-center"
+        >
+          <i
+            class="bi bi-clock fs-1"
+          />
+          <span
+            class="fw-bold mx-2"
+          >
+            35
+            m
+          </span>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="row mb-4 justify-content-evenly align-items-center border rounded p-4 shadow"
+      class="row mb-4 justify-content-evenly align-items-center border rounded p-2 shadow"
     >
       <div
-        class="col-md-12"
+        class="col-md-2"
       >
+        <i
+          class="bi bi-lightning-charge fs-1"
+        />
+      </div>
+      <div
+        class="col-md-6"
+      >
+        <p
+          class="m-0 mt-3 fw-bold"
+        >
+          ChargePoint - 123 Road
+        </p>
+        <p
+          class="m-0 text-secondary"
+        >
+          A12 B34 London, UK
+        </p>
         <div
-          class="row"
+          class="d-flex"
         >
           <div
-            class="col-md-2"
+            class="w-50 d-flex align-items-center"
           >
             <i
-              class="bi bi-lightning-charge fs-1"
-            />
-          </div>
-          <div
-            class="col-md-7"
-          >
-            <p
-              class="m-0 fw-bold"
-            >
-              ChargePoint - 123 Road
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              A12 B34 London, UK
-            </p>
-          </div>
-          <div
-            class="col-md-3 d-flex align-items-center"
-          >
-            <i
-              class="bi bi-clock fs-2"
-            />
-            <span
-              class="fw-bold mx-1"
-            >
-              35
-              m
-            </span>
-          </div>
-        </div>
-        <div
-          class="row justify-content-center"
-        >
-          <div
-            class="col-md-4 d-flex align-items-center"
-          >
-            <i
-              class="bi bi-battery-half text-danger fs-1"
+              class="bi bi-battery-half text-danger fs-2 d-flex"
             />
             <span
               class="fw-bold text-danger mx-1"
@@ -146,15 +114,12 @@ Object {
               70
               %
             </span>
-            <i
-              class="bi bi-arrow-right-short fs-1"
-            />
           </div>
           <div
-            class="col-md-4 d-flex align-items-center"
+            class="w-50 d-flex align-items-center"
           >
             <i
-              class="bi bi-battery-half text-success fs-1"
+              class="bi bi-battery-half text-success fs-2 d-flex"
             />
             <span
               class="fw-bold text-success mx-1"
@@ -164,6 +129,19 @@ Object {
             </span>
           </div>
         </div>
+      </div>
+      <div
+        class="col-md-3 d-flex align-items-center"
+      >
+        <i
+          class="bi bi-clock fs-1"
+        />
+        <span
+          class="fw-bold mx-2"
+        >
+          35
+          m
+        </span>
       </div>
     </div>
   </div>,
