@@ -1,5 +1,5 @@
 const EVStation = ({ name, location, connector, distance, time }) => (
-  <div className='row bg-white rounded bg-opacity-75 p-3 m-5'>
+  <div className='row bg-white rounded p-3 m-5'>
     <div className='col-md-12'>
       <h3 className='text-center'>{name}</h3>
       <p className='text-center'>{location}</p>

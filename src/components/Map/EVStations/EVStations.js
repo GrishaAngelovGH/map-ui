@@ -19,7 +19,7 @@ const EVStations = ({ show, onHide }) => {
           <span className='mx-2'>EV Stations Near You</span>
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body className='bg-secondary bg-opacity-75 d-flex justify-content-center align-items-center' style={{ height: 350 }}>
+      <Modal.Body className='bg-primary bg-gradient d-flex justify-content-center align-items-center' style={{ height: 350 }}>
         <Carousel>
           {
             evstations.map(v => (
