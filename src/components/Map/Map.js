@@ -141,6 +141,53 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
     }
   ]
 
+  const toggles = [
+    {
+      show: showLocations,
+      component: Locations,
+      props: {}
+    },
+    {
+      show: showTrafficReport,
+      component: TrafficReport,
+      props: {
+        show: showTrafficReport,
+        onHide: handleShowTrafficReport
+      }
+    },
+    {
+      show: showRoute,
+      component: VehicleRoute,
+      props: {}
+    },
+    {
+      show: showCityArea,
+      component: CityArea,
+      props: {}
+    },
+    {
+      show: showUndergroundLocations,
+      component: UndergroundLocations,
+      props: {}
+    },
+    {
+      show: showEVChargeHistory,
+      component: EVChargeHistory,
+      props: {
+        show: showEVChargeHistory,
+        onHide: setShowEVChargeHistory
+      }
+    },
+    {
+      show: showEVStations,
+      component: EVStations,
+      props: {
+        show: showEVStations,
+        onHide: handleShowEVStations
+      }
+    }
+  ]
+
   return (
     <MapContainer
       center={[map.lat, map.lng]}
@@ -180,26 +227,13 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
       }
 
       <FeatureGroup ref={featureGroupRef}>
-        {showLocations && <Locations />}
-
         {
-          showTrafficReport && (
-            <TrafficReport
-              show={showTrafficReport}
-              onHide={handleShowTrafficReport}
-            />
-          )
+          toggles.map((v, i) => {
+            const { show, component: Component, props } = v
+
+            return show ? <Component key={i} {...props} /> : null
+          })
         }
-
-        {showRoute && <VehicleRoute />}
-
-        {showCityArea && <CityArea />}
-
-        {showUndergroundLocations && <UndergroundLocations />}
-
-        {showEVChargeHistory && <EVChargeHistory show={showEVChargeHistory} onHide={setShowEVChargeHistory} />}
-
-        {showEVStations && <EVStations show={showEVStations} onHide={handleShowEVStations} />}
 
         {
           boroughCoordinates.length > 0 && (
