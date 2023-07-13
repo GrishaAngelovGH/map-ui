@@ -119,6 +119,28 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
     { icon: 'backspace', title: 'Clear Map', onClick: handleClearMap }
   ]
 
+  const sidebars = [
+    {
+      id: 'sidebar-1',
+      show: showPlacesSidebar,
+      component: PlacesSidebar,
+      props: {
+        showSidebar: showPlacesSidebar,
+        onHide: handleShowPlacesSidebar
+      }
+    },
+    {
+      id: 'sidebar-2',
+      show: showBoroughsSidebar,
+      component: BoroughsSidebar,
+      props: {
+        showSidebar: showBoroughsSidebar,
+        onHide: handleShowBoroughsSidebar,
+        onBoroughClick: handleBoroughClick
+      }
+    }
+  ]
+
   return (
     <MapContainer
       center={[map.lat, map.lng]}
@@ -150,22 +172,11 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
       <SidebarMapButton onClick={handleShowPlacesSidebar} />
 
       {
-        showPlacesSidebar && (
-          <PlacesSidebar
-            showSidebar={showPlacesSidebar}
-            onHide={handleShowPlacesSidebar}
-          />
-        )
-      }
+        sidebars.map(v => {
+          const { id, show, component: Component, props } = v
 
-      {
-        showBoroughsSidebar && (
-          <BoroughsSidebar
-            showSidebar={showBoroughsSidebar}
-            onHide={handleShowBoroughsSidebar}
-            onBoroughClick={handleBoroughClick}
-          />
-        )
+          return show ? <Component key={id} {...props} /> : null
+        })
       }
 
       <FeatureGroup ref={featureGroupRef}>
