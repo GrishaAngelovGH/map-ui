@@ -10,6 +10,7 @@
     "bootstrap-icons": "^1.10.5",
     "leaflet": "^1.9.4",
     "leaflet.motion": "^0.3.2",
+    "mapillary-js": "^4.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
