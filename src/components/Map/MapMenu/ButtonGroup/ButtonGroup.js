@@ -1,26 +1,31 @@
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
+
 import ldnUndergroundIcon from 'images/map/map-menu/button-group/ldn-underground.png'
 import mapIcon from 'images/map/map-menu//button-group/map.png'
 import chargingStationIcon from 'images/map/map-menu//button-group/charging-station.png'
 import streetViewIcon from 'images/map/map-menu//button-group/street-view.png'
 
-const ButtonGroupWrapper = ({ onShowUndergroundLocations, onShowBoroughs, onShowEVStations, onShowStreetView }) => (
-  <ButtonGroup>
-    <Button variant='outline-success' title='Underground Locations' onClick={onShowUndergroundLocations}>
-      <Image src={ldnUndergroundIcon} width={40} />
-    </Button>
-    <Button variant='outline-success' title='London Boroughs' onClick={onShowBoroughs}>
-      <Image src={mapIcon} width={40} />
-    </Button>
-    <Button variant='outline-success' title='EV Stations' onClick={onShowEVStations}>
-      <Image src={chargingStationIcon} width={40} />
-    </Button>
-    <Button variant='outline-success' title='Street View' onClick={onShowStreetView}>
-      <Image src={streetViewIcon} width={40} />
-    </Button>
-  </ButtonGroup>
-)
+const ButtonGroupWrapper = ({ onShowUndergroundLocations, onShowBoroughs, onShowEVStations, onShowStreetView }) => {
+  const buttons = [
+    { title: 'Underground Locations', image: ldnUndergroundIcon, onClick: onShowUndergroundLocations },
+    { title: 'London Boroughs', image: mapIcon, onClick: onShowBoroughs },
+    { title: 'EV Stations', image: chargingStationIcon, onClick: onShowEVStations },
+    { title: 'Street View', image: streetViewIcon, onClick: onShowStreetView },
+  ]
+
+  return (
+    <ButtonGroup>
+      {
+        buttons.map((v, i) => (
+          <Button key={i} variant='outline-success' title={v.title} onClick={v.onClick}>
+            <Image src={v.image} width={40} />
+          </Button>
+        ))
+      }
+    </ButtonGroup>
+  )
+}
 
 export default ButtonGroupWrapper
