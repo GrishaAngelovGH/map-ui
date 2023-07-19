@@ -14,6 +14,7 @@ import PlacesSidebar from './Sidebars/PlacesSidebar'
 import TrafficReport from './TrafficReport'
 import UndergroundLocations from './UndergroundLocations'
 import VehicleRoute from './VehicleRoute'
+import StreetView from './StreetView'
 
 import 'leaflet/dist/leaflet.css'
 import './Map.scss'
@@ -28,6 +29,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
   const [showUndergroundLocations, setShowUndergroundLocations] = useState(false)
   const [showEVChargeHistory, setShowEVChargeHistory] = useState(false)
   const [showEVStations, setShowEVStations] = useState(false)
+  const [showStreetView, setShowStreetView] = useState(false)
   const [boroughCoordinates, setBoroughCoordinates] = useState([])
 
   const featureGroupRef = useRef()
@@ -54,6 +56,10 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
 
   const handleShowEVStations = () => {
     setShowEVStations(!showEVStations)
+  }
+
+  const handleShowStreetView = () => {
+    setShowStreetView(!showStreetView)
   }
 
   const handlePlayRoute = () => {
@@ -163,6 +169,14 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         show: showEVStations,
         onHide: handleShowEVStations
       }
+    },
+    {
+      show: showStreetView,
+      component: StreetView,
+      props: {
+        show: showStreetView,
+        onHide: handleShowStreetView
+      }
     }
   ]
 
@@ -181,6 +195,7 @@ const Map = ({ showLocations, showRoute, resetControls }) => {
         onShowUndergroundLocations={handleShowUndergroundLocations}
         onShowBoroughs={handleShowBoroughsSidebar}
         onShowEVStations={handleShowEVStations}
+        onShowStreetView={handleShowStreetView}
       />
 
       {
