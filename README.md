@@ -20,6 +20,7 @@ Implemented features:
   - Select view of all / favorites boroughs
   - Sort boroughs by id, name or area
   - Search borough by name
+* Visualization of StreetView (Mapillary)
 
 ## The front-end project is using the following technologies:
 * Initial structure is created with **create-react-app**
@@ -32,4 +33,5 @@ Implemented features:
 * Integrated **bootstrap-icons**
 * Integrated **leaflet** 
 * Integrated **leaflet.motion**
+* Integrated **mapillary-js**
 * Integrated **scss**
