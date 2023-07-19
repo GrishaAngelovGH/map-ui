@@ -4,8 +4,9 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import ldnUndergroundIcon from 'images/map/map-menu/button-group/ldn-underground.png'
 import mapIcon from 'images/map/map-menu//button-group/map.png'
 import chargingStationIcon from 'images/map/map-menu//button-group/charging-station.png'
+import streetViewIcon from 'images/map/map-menu//button-group/street-view.png'
 
-const ButtonGroupWrapper = ({ onShowUndergroundLocations, onShowBoroughs, onShowEVStations }) => (
+const ButtonGroupWrapper = ({ onShowUndergroundLocations, onShowBoroughs, onShowEVStations, onShowStreetView }) => (
   <ButtonGroup>
     <Button variant='outline-success' title='Underground Locations' onClick={onShowUndergroundLocations}>
       <Image src={ldnUndergroundIcon} width={40} />
@@ -15,6 +16,9 @@ const ButtonGroupWrapper = ({ onShowUndergroundLocations, onShowBoroughs, onShow
     </Button>
     <Button variant='outline-success' title='EV Stations' onClick={onShowEVStations}>
       <Image src={chargingStationIcon} width={40} />
+    </Button>
+    <Button variant='outline-success' title='Street View' onClick={onShowStreetView}>
+      <Image src={streetViewIcon} width={40} />
     </Button>
   </ButtonGroup>
 )

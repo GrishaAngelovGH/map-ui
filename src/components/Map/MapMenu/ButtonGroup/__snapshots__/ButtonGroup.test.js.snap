@@ -42,6 +42,17 @@ Object {
             width="40"
           />
         </button>
+        <button
+          class="btn btn-outline-success"
+          title="Street View"
+          type="button"
+        >
+          <img
+            class=""
+            src="street-view.png"
+            width="40"
+          />
+        </button>
       </div>
     </div>
   </body>,
@@ -80,6 +91,17 @@ Object {
         <img
           class=""
           src="charging-station.png"
+          width="40"
+        />
+      </button>
+      <button
+        class="btn btn-outline-success"
+        title="Street View"
+        type="button"
+      >
+        <img
+          class=""
+          src="street-view.png"
           width="40"
         />
       </button>
