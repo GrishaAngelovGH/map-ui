@@ -34,233 +34,398 @@ Object {
         class="offcanvas-body"
       >
         <div
-          class="row mb-3 border border-3 rounded shadow p-3 bg-light small"
+          class="row mb-3 border border-3 rounded shadow p-2 bg-light small"
         >
           <div
-            class="col-md-10"
+            class="col-md-12"
           >
-            <p
-              class="fw-bold text-center"
+            <div
+              class="row"
             >
-              Bill Baker's Street Restaurant
-            </p>
-            <p
-              class="p-0 alert alert-success text-center"
+              <div
+                class="col-md-10"
+              >
+                <p
+                  class="fw-bold text-center"
+                >
+                  Bill Baker's Street Restaurant
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center"
+                >
+                  <p
+                    class="p-1 w-50 alert alert-success text-center"
+                  >
+                    Open
+                  </p>
+                  <p
+                    class="text-secondary"
+                  >
+                    4.3 
+                    <i
+                      class="bi bi-star-fill text-warning"
+                    />
+                     (3037 votes)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-2"
+              >
+                <button
+                  class="bi bi-chevron-right btn btn-primary w-100 p-1"
+                />
+              </div>
+            </div>
+            <div
+              class="row"
             >
-              Open
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              4.3 
-              <i
-                class="bi bi-star-fill text-warning"
-              />
-               (3037 votes)
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Contemporary all-day European dining
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Closes
-               11 PM
-            </p>
-          </div>
-          <div
-            class="col-md-2"
-          >
-            <i
-              class="bi bi-chevron-right bg-primary text-white fs-1 rounded"
-              role="button"
-            />
+              <div
+                class="col-md-12"
+              >
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-card-text fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Contemporary all-day European dining
+                  </span>
+                </p>
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-clock fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Closes
+                     11 PM
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div
-          class="row mb-3 border border-3 rounded shadow p-3 bg-light small"
+          class="row mb-3 border border-3 rounded shadow p-2 bg-light small"
         >
           <div
-            class="col-md-10"
+            class="col-md-12"
           >
-            <p
-              class="fw-bold text-center"
+            <div
+              class="row"
             >
-              Pizza Restaurant Waterloo
-            </p>
-            <p
-              class="p-0 alert alert-danger text-center"
+              <div
+                class="col-md-10"
+              >
+                <p
+                  class="fw-bold text-center"
+                >
+                  Pizza Restaurant Waterloo
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center"
+                >
+                  <p
+                    class="p-1 w-50 alert alert-danger text-center"
+                  >
+                    Closed
+                  </p>
+                  <p
+                    class="text-secondary"
+                  >
+                    4.3 
+                    <i
+                      class="bi bi-star-fill text-warning"
+                    />
+                     (3037 votes)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-2"
+              >
+                <button
+                  class="bi bi-chevron-right btn btn-primary w-100 p-1"
+                />
+              </div>
+            </div>
+            <div
+              class="row"
             >
-              Closed
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              4.3 
-              <i
-                class="bi bi-star-fill text-warning"
-              />
-               (3037 votes)
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Contemporary all-day European dining
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Opens
-               11 PM
-            </p>
-          </div>
-          <div
-            class="col-md-2"
-          >
-            <i
-              class="bi bi-chevron-right bg-primary text-white fs-1 rounded"
-              role="button"
-            />
+              <div
+                class="col-md-12"
+              >
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-card-text fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Contemporary all-day European dining
+                  </span>
+                </p>
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-clock fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Opens
+                     11 PM
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div
-          class="row mb-3 border border-3 rounded shadow p-3 bg-light small"
+          class="row mb-3 border border-3 rounded shadow p-2 bg-light small"
         >
           <div
-            class="col-md-10"
+            class="col-md-12"
           >
-            <p
-              class="fw-bold text-center"
+            <div
+              class="row"
             >
-              Leicester Square Restaurant
-            </p>
-            <p
-              class="p-0 alert alert-success text-center"
+              <div
+                class="col-md-10"
+              >
+                <p
+                  class="fw-bold text-center"
+                >
+                  Leicester Square Restaurant
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center"
+                >
+                  <p
+                    class="p-1 w-50 alert alert-success text-center"
+                  >
+                    Open
+                  </p>
+                  <p
+                    class="text-secondary"
+                  >
+                    4.3 
+                    <i
+                      class="bi bi-star-fill text-warning"
+                    />
+                     (3037 votes)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-2"
+              >
+                <button
+                  class="bi bi-chevron-right btn btn-primary w-100 p-1"
+                />
+              </div>
+            </div>
+            <div
+              class="row"
             >
-              Open
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              4.3 
-              <i
-                class="bi bi-star-fill text-warning"
-              />
-               (3037 votes)
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Contemporary all-day European dining
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Closes
-               11 PM
-            </p>
-          </div>
-          <div
-            class="col-md-2"
-          >
-            <i
-              class="bi bi-chevron-right bg-primary text-white fs-1 rounded"
-              role="button"
-            />
+              <div
+                class="col-md-12"
+              >
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-card-text fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Contemporary all-day European dining
+                  </span>
+                </p>
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-clock fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Closes
+                     11 PM
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div
-          class="row mb-3 border border-3 rounded shadow p-3 bg-light small"
+          class="row mb-3 border border-3 rounded shadow p-2 bg-light small"
         >
           <div
-            class="col-md-10"
+            class="col-md-12"
           >
-            <p
-              class="fw-bold text-center"
+            <div
+              class="row"
             >
-              Mayfair Restaurant
-            </p>
-            <p
-              class="p-0 alert alert-success text-center"
+              <div
+                class="col-md-10"
+              >
+                <p
+                  class="fw-bold text-center"
+                >
+                  Mayfair Restaurant
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center"
+                >
+                  <p
+                    class="p-1 w-50 alert alert-success text-center"
+                  >
+                    Open
+                  </p>
+                  <p
+                    class="text-secondary"
+                  >
+                    4.3 
+                    <i
+                      class="bi bi-star-fill text-warning"
+                    />
+                     (3037 votes)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-2"
+              >
+                <button
+                  class="bi bi-chevron-right btn btn-primary w-100 p-1"
+                />
+              </div>
+            </div>
+            <div
+              class="row"
             >
-              Open
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              4.3 
-              <i
-                class="bi bi-star-fill text-warning"
-              />
-               (3037 votes)
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Contemporary all-day European dining
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Closes
-               11 PM
-            </p>
-          </div>
-          <div
-            class="col-md-2"
-          >
-            <i
-              class="bi bi-chevron-right bg-primary text-white fs-1 rounded"
-              role="button"
-            />
+              <div
+                class="col-md-12"
+              >
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-card-text fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Contemporary all-day European dining
+                  </span>
+                </p>
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-clock fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Closes
+                     11 PM
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div
-          class="row mb-3 border border-3 rounded shadow p-3 bg-light small"
+          class="row mb-3 border border-3 rounded shadow p-2 bg-light small"
         >
           <div
-            class="col-md-10"
+            class="col-md-12"
           >
-            <p
-              class="fw-bold text-center"
+            <div
+              class="row"
             >
-              Chelsea Restaurant
-            </p>
-            <p
-              class="p-0 alert alert-success text-center"
+              <div
+                class="col-md-10"
+              >
+                <p
+                  class="fw-bold text-center"
+                >
+                  Chelsea Restaurant
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center"
+                >
+                  <p
+                    class="p-1 w-50 alert alert-success text-center"
+                  >
+                    Open
+                  </p>
+                  <p
+                    class="text-secondary"
+                  >
+                    4.3 
+                    <i
+                      class="bi bi-star-fill text-warning"
+                    />
+                     (3037 votes)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-2"
+              >
+                <button
+                  class="bi bi-chevron-right btn btn-primary w-100 p-1"
+                />
+              </div>
+            </div>
+            <div
+              class="row"
             >
-              Open
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              4.3 
-              <i
-                class="bi bi-star-fill text-warning"
-              />
-               (3037 votes)
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Contemporary all-day European dining
-            </p>
-            <p
-              class="m-0 text-secondary"
-            >
-              Closes
-               11 PM
-            </p>
-          </div>
-          <div
-            class="col-md-2"
-          >
-            <i
-              class="bi bi-chevron-right bg-primary text-white fs-1 rounded"
-              role="button"
-            />
+              <div
+                class="col-md-12"
+              >
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-card-text fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Contemporary all-day European dining
+                  </span>
+                </p>
+                <p
+                  class="m-0 text-secondary d-flex align-items-center"
+                >
+                  <i
+                    class="bi bi-clock fs-4"
+                  />
+                  <span
+                    class="mx-2"
+                  >
+                    Closes
+                     11 PM
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
