@@ -4,9 +4,14 @@ import { Viewer } from 'mapillary-js'
 
 const accessToken = process.env.REACT_APP_DEMO_MAPILLARY_API_ACCESS_TOKEN
 
-const MapillaryViewer = () => {
+const MapillaryViewer = ({ fullscreen }) => {
   const containerRef = useRef()
   let viewer
+
+  const height = {
+    true: 'calc(100vh - 100px)',
+    false: 'calc(100vh - 200px)'
+  }
 
   useEffect(() => {
     viewer = new Viewer({
@@ -23,7 +28,7 @@ const MapillaryViewer = () => {
   }, [containerRef.current])
 
   return (
-    <div ref={containerRef} style={{ width: '100%', height: 'calc(100vh - 200px)' }} />
+    <div ref={containerRef} style={{ width: '100%', height: height[fullscreen] }} />
   )
 }
 

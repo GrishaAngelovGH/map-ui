@@ -39,6 +39,10 @@ Object {
               >
                 Street View
               </span>
+              <i
+                class="bi bi-arrows-fullscreen mx-2"
+                role="button"
+              />
             </div>
             <button
               aria-label="Close"
