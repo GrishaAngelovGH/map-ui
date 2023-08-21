@@ -23,15 +23,5 @@ Implemented features:
 * Visualization of StreetView (Mapillary)
 
 ## The front-end project is using the following technologies:
-* Initial structure is created with **create-react-app**
-* Integrated **babel/eslint-parser** with added various rules
-* Integrated **React.JS 18.2.0**
-* Integrated **react-bootstrap**
-* Integrated **react-leaflet**
-* Integrated **react-leaflet-cluster**
-* Integrated **bootstrap**
-* Integrated **bootstrap-icons**
-* Integrated **leaflet** 
-* Integrated **leaflet.motion**
-* Integrated **mapillary-js**
-* Integrated **scss**
+
+<img src="https://img.shields.io/badge/create--react--app-%23563D7C.svg?style=flat&logo=create-react-app&color=white" height="30"> <img src="https://img.shields.io/badge/babel--eslint--parser-%23563D7C.svg?style=flat&logo=babel&color=white" height="30"> <img src="https://img.shields.io/badge/SASS-%231572B6.svg?style=flat&logo=sass&color=white&logoColor=darkpink" height="30"> <img src="https://img.shields.io/badge/React.JS-%23563D7C.svg?style=flat&logo=react&color=white" height="30"> <img src="https://img.shields.io/badge/react--bootstrap-blue.svg?style=flat&logo=react&color=white&logoColor=blue" height="30"> <img src="https://img.shields.io/badge/leaflet-311C87?style=flat&logo=leaflet&color=white&logoColor=green" height="30"> <img src="https://img.shields.io/badge/react--leaflet-311C87?style=flat&logo=leaflet&color=white&logoColor=green" height="30"> <img src="https://img.shields.io/badge/react--leaflet--cluster-311C87?style=flat&logo=leaflet&color=white&logoColor=green" height="30"> <img src="https://img.shields.io/badge/leaflet--motion-311C87?style=flat&logo=leaflet&color=white&logoColor=green" height="30"> <img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&color=white&logoColor=purple" height="30"> <img src="https://img.shields.io/badge/bootstrap--icons-%23563D7C.svg?style=flat&logo=bootstrap&color=white&logoColor=purple" height="30"> <img src="https://img.shields.io/badge/mapillary--js-311C87?style=flat&color=white" height="30">
