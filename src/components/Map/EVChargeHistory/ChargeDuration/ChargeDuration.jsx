@@ -5,7 +5,7 @@ const ChargeDuration = ({ duration }) => (
     </div>
     <div className='col-md-6'>
       <p className='m-0 mt-3 fw-bold'>{duration.name}</p>
-      <p className='m-0 text-secondary'>{duration.location}</p>
+      <p className='m-0 text-secondary'>{duration.address}</p>
 
       <div className='d-flex'>
         <div className='w-50 d-flex align-items-center'>
