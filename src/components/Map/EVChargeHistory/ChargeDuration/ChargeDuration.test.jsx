@@ -12,7 +12,7 @@ test('should render ChargeDuration component', () => {
         durationTimeInMin: 35,
         charge: true,
         name: 'ChargePoint - 123 Road',
-        location: 'A12 B34 London, UK'
+        address: 'A12 B34 London, UK'
       }}
     />
   )

@@ -1,16 +1,18 @@
 import { render } from '@testing-library/react'
+import { vi } from 'vitest'
 
 import { MapContainer } from 'react-leaflet'
 import CityArea from './CityArea'
 
-jest.mock('react-leaflet', () => {
-  const originalModule = jest.requireActual('react-leaflet')
+vi.mock('react-leaflet', async () => {
+  const originalModule = await vi.importActual('react-leaflet')
 
   return {
     __esModule: true,
     ...originalModule,
     // Named export mocks
-    useMap: () => ({ setView: () => { } })
+    useMap: () => ({ setView: () => { } }),
+    MapContainer: originalModule.MapContainer
   }
 })
 

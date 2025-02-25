@@ -8,7 +8,7 @@ test('should render EVChargeHistory/Summary component', () => {
       history={[
         { id: 1, location: { city: 'London', country: 'England, UK' }, battery: 100, charge: false, distanceInKm: 20, durationTimeInMin: 30 },
         { id: 2, location: { city: 'London', country: 'England, UK' }, battery: 90, charge: false, distanceInKm: 24, durationTimeInMin: 28 },
-        { id: 3, location: { city: 'London', country: 'England, UK' }, currentBatteryCharge: 85, prevBatteryCharge: 70, durationTimeInMin: 35, charge: true, name: 'ChargePoint - 123 Road', location: 'A12 B34 London, UK' },
+        { id: 3, location: { city: 'London', country: 'England, UK' }, currentBatteryCharge: 85, prevBatteryCharge: 70, durationTimeInMin: 35, charge: true, name: 'ChargePoint - 123 Road', address: 'A12 B34 London, UK' },
       ]}
     />
   )

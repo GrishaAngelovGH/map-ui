@@ -12,4 +12,9 @@ export default defineConfig({
       images: "/src/images"
     }
   },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './tests/setup.js'
+  }
 })

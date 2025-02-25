@@ -1,16 +1,18 @@
 import { render } from '@testing-library/react'
+import { vi } from 'vitest'
 
 import { MapContainer } from 'react-leaflet'
 import VehicleRoute from './VehicleRoute'
 
-jest.mock('react-leaflet', () => {
-  const originalModule = jest.requireActual('react-leaflet')
+vi.mock('react-leaflet', async () => {
+  const originalModule = await vi.importActual('react-leaflet')
 
   return {
     __esModule: true,
     ...originalModule,
     // Named export mocks
-    Polyline: jest.fn()
+    Polyline: vi.fn(),
+    MapContainer: originalModule.MapContainer
   }
 })
 
