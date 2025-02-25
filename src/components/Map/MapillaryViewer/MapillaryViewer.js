@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 
 import { Viewer } from 'mapillary-js'
 
-const accessToken = process.env.REACT_APP_DEMO_MAPILLARY_API_ACCESS_TOKEN
+const accessToken = import.meta.env.VITE_REACT_APP_DEMO_MAPILLARY_API_ACCESS_TOKEN
 
 const MapillaryViewer = ({ fullscreen }) => {
   const containerRef = useRef()

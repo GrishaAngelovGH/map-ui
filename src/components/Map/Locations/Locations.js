@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 
 import { Marker, useMap } from 'react-leaflet'
-import MarkerClusterGroup from 'react-leaflet-cluster'
+import MarkerClusterGroup from 'react-leaflet-markercluster'
 
 import LocationsContext from 'contexts/LocationsContext'
 import MarkerIcon from 'components/Map/MarkerIcon'
